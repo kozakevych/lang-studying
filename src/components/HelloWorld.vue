@@ -70,4 +70,8 @@ li {
   margin: 0 10px;
 }
 
+.jumbotron {
+  color: white;
+}
+
 </style>

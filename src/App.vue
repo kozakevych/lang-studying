@@ -2,8 +2,8 @@
   <div id="app">
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-        <a class="navbar-brand" href="#">Studying Platform</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Навчальна платформа</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,11 +11,11 @@
         <div class="collapse navbar-collapse" id="navbarsExample09">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Головна<span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item active dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Courses</a>
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курси</a>
               <div class="dropdown-menu" aria-labelledby="dropdown09">
                 <a class="dropdown-item" href="#">JavaScript</a>
                 <a class="dropdown-item" href="#">Python</a>
@@ -23,7 +23,7 @@
               </div>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="templates/sign-in.html">Sign in</a>
+              <a class="nav-link" href="templates/sign-in.html">Увійти</a>
             </li>
           </ul>
         </div>
@@ -35,7 +35,7 @@
 
     <footer class="footer">
       <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-muted">Львів 2017</span>
       </div>
     </footer>
 
