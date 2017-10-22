@@ -19,16 +19,18 @@
               <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курси</a>
               <div class="dropdown-menu" aria-labelledby="dropdown09">
                 <a class="dropdown-item" href="/js-content">JavaScript</a>
-                <a class="dropdown-item disabled" href="#">Python</a>
-                <a class="dropdown-item disabled" href="#">TypeScript</a>
+                <a class="dropdown-item disabled" href="#">Python (У розробці)</a>
+                <a class="dropdown-item disabled" href="#">TypeScript (У розробці)</a>
               </div>
             </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="templates/sign-in.html">Увійти</a>
+              <a class="nav-link" href="/sign-in">Увійти</a>
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="templates/sign-in.html">English</a>
+              <a class="nav-link" href="#">English</a>
             </li>
           </ul>
         </div>

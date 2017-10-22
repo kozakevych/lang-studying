@@ -12,7 +12,7 @@
     <div class="card-header" role="tab" id="headingOne">
       <h5 class="mb-0">
         <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          1. Introduction to JS
+          1. Вступ
         </a>
       </h5>
     </div>
@@ -27,7 +27,7 @@
     <div class="card-header" role="tab" id="headingTwo">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-         2. Control Flow
+         2. Потік керування
         </a>
       </h5>
     </div>
@@ -41,7 +41,7 @@
     <div class="card-header" role="tab" id="headingThree">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          3. Functions
+          3. Функції
         </a>
       </h5>
     </div>
@@ -55,7 +55,7 @@
     <div class="card-header" role="tab" id="headingFour">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          4. Scope
+          4. Область видимості
         </a>
       </h5>
     </div>
@@ -74,7 +74,7 @@
     <div class="card-header" role="tab" id="headingFive">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          5. Arrays
+          5. Масиви
         </a>
       </h5>
     </div>
@@ -88,7 +88,7 @@
     <div class="card-header" role="tab" id="headingSix">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          6. Loops
+          6. Цикли
         </a>
       </h5>
     </div>
@@ -102,7 +102,7 @@
     <div class="card-header" role="tab" id="headingSeven">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          7. Iterators
+          7. Ітератори
         </a>
       </h5>
     </div>
@@ -117,7 +117,7 @@
     <div class="card-header" role="tab" id="headingEight">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-          8. Objects
+          8. Об'єкти
         </a>
       </h5>
     </div>
@@ -132,7 +132,7 @@
     <div class="card-header" role="tab" id="headingNine">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-          9. Classes
+          9. Класи
         </a>
       </h5>
     </div>
@@ -147,7 +147,7 @@
     <div class="card-header" role="tab" id="headingTen">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-          10. Browser Compatibility
+          10. Сумісність з браузерами
         </a>
       </h5>
     </div>
@@ -162,7 +162,7 @@
     <div class="card-header" role="tab" id="headingEleven">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-          11. Modules
+          11. Модулі
         </a>
       </h5>
 
@@ -178,7 +178,7 @@
     <div class="card-header" role="tab" id="headingTwelve">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
-          12. Requests
+          12. Запити
         </a>
       </h5>
     </div>
@@ -224,5 +224,12 @@ export default {
 		background: url(../assets/coding-screen.jpg);
 		margin-bottom: 10px;
 		color: white;
+	}
+	.jumbotron-js h1 {
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
 	}
 </style>
