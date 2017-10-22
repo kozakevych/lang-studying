@@ -40,14 +40,31 @@
     <router-view/>
 
 
-    <footer class="footer bg-dark rounded navbar-fixed-bottom">
-      <div class="container">
-        <ul class="contact-info">
-          <li><a href="https://github.com/kozakevych" target="_blank"><img class="logo" src="./assets/git.svg" alt="GitHub Logo"></a></li>
-          <li><a href="https://facebook.com/andrii.kozakevych" target="_blank"><img class="logo" src="./assets/fb.png" alt="Facebook Logo"></a></li>
-          <li><a href="https://linkedin.com/in/kozakevych" target="_blank"><img class="logo" src="./assets/linkedin.png" height="240" width="240" alt="LinkedIn Logo"></a></li>
-        </ul>
+    
+    <hr />
 
+    <footer class="footer rounded navbar-fixed-bottom">
+      <div class="container">
+        <ul>
+
+          <li>
+          <ul class="contact-info">
+            <li><span>Створено за допомогою:</span></li>
+            <li><img class="logo" src="./assets/logo.png" alt="VueJS Logo" title="VueJS"></li>
+            <li><img class="logo" src="./assets/bootstrap-logo.png" alt="Bootstrap Logo" title="Bootstrap"></li>
+          </ul>
+          </li>
+          
+          <li>
+          <ul class="contact-info">
+            <li><span>Контакти:</span></li>
+            <li><a href="https://github.com/kozakevych" target="_blank"><img class="logo black-logo" src="./assets/git.svg" alt="GitHub Logo"></a></li>
+            <li><a href="https://facebook.com/andrii.kozakevych" target="_blank"><img class="logo" src="./assets/fb.png" alt="Facebook Logo"></a></li>
+            <li><a href="https://linkedin.com/in/kozakevych" target="_blank"><img class="logo" src="./assets/linkedin.png" alt="LinkedIn Logo"></a></li>
+          </ul>
+          </li>
+        </ul>
+        
         <span>Львів 2017</span>
       </div>
       
@@ -64,7 +81,7 @@ export default {
 </script>
 
 <style>
-html, body, #app, .container {
+html, body {
 
   height: 100%;
 }
@@ -90,15 +107,29 @@ body {
 }
 
 .footer {
-  margin: 10px 0px;
-  padding: 20px;
-  color: white;
+  margin: 20px 0px;
 }
 
+.footer ul {
+  margin: 15px 0px;
+}
 
 .logo {
   height: 30px;
   width: 30px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%); 
+}
+
+.black-logo {
+  -webkit-filter: contrast(30%); /* Safari 6.0 - 9.0 */
+  filter: contrast(30%); 
+}
+
+.logo:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  opacity: 1;
 }
 
 ul {
