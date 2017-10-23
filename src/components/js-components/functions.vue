@@ -1,20 +1,20 @@
 <template>
-    <div class="container">
         
-    Introduction to Functions
+    <div class="blog-post text-left">
+    <h3>Introduction to Functions</h3>
 
-A function is a block of code designed to perform a task.
+<p>A function is a block of code designed to perform a task.</p>
 
-Functions are like recipes. They accept data, perform actions on that data, and return a result. The beauty of functions is that they allow us to write a block of code once, then we can reuse it over and over without rewriting the same code.
+<p>Functions are like recipes. They accept data, perform actions on that data, and return a result. The beauty of functions is that they allow us to write a block of code once, then we can reuse it over and over without rewriting the same code.</p>
 
-Take a look at the code in this exercise. This code turns the calculator on if it is currently off, and turns it off if the calculator is currently on.
+<p>Take a look at the code in this exercise. This code turns the calculator on if it is currently off, and turns it off if the calculator is currently on.</p>
 
-See if you can figure out how this code works. In the next exercise, we'll walk through it line by line.
+<p>See if you can figure out how this code works. In the next exercise, we'll walk through it line by line.</p>
 
 
-How does this code work?
+<p>How does this code work?</p>
 
-let calculatorIsOn = false;
+<pre><code>let calculatorIsOn = false;
 
 const pressPowerButton = () => {
   if (calculatorIsOn) {
@@ -30,11 +30,11 @@ pressPowerButton();
 // Output: Calculator turning on.
 
 pressPowerButton();
-// Output: Calculator turning off.
+// Output: Calculator turning off.</code></pre>
 
-Let's explore each part in detail.
+<p>Let's explore each part in detail.</p>
 
-1. We created a function named pressPowerButton.
+<p>1. We created a function named pressPowerButton.</p>
 
     const pressPowerButton creates a variable with a given name written in camelCase.
 

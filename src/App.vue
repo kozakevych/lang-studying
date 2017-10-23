@@ -137,7 +137,7 @@ ul {
   padding: 0;
 }
 
-li {
+footer li {
   display: inline-block;
   margin: 0 10px;
 }

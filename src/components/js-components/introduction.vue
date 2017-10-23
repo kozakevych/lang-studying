@@ -2,12 +2,8 @@
 
 	<div class="introduction-js">
 		
-    <div class="blog-post text-left"><nav aria-label="breadcrumb" role="navigation">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
-  </ol>
-</nav>
+    <div class="blog-post text-left">
+
     <h1 class="blog-post-title">{{ title }}</h1>
 
     <hr />
@@ -186,19 +182,6 @@ You can write single-line comments with // and multi-line comments between /* an
 </p>
 </div><!-- /.blog-post -->
 
-   <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item disabled">
-      <a class="page-link" href="#">Next</a>
-    </li>
-  </ul>
-</nav>
 	</div>
 </template>
 
@@ -208,7 +191,7 @@ You can write single-line comments with // and multi-line comments between /* an
     name: 'introduction-js',
     data () {
       return {
-        title: 'Вступ до JavaScript'
+        title: 'Вступ'
       }
     }
   }
