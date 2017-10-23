@@ -2,7 +2,12 @@
 
 	<div class="introduction-js">
 		
-    <div class="blog-post text-left">
+    <div class="blog-post text-left"><nav aria-label="breadcrumb" role="navigation">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+  </ol>
+</nav>
     <h1 class="blog-post-title">{{ title }}</h1>
 
     <hr />

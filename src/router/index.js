@@ -4,8 +4,8 @@ import MainPage from '@/components/main-page'
 import SignIn from '@/components/sign-in'
 import JsContent from '@/components/js-content'
 import IntroJS from '@/components/js-components/introduction'
+import ControlFlow from '@/components/js-components/control-flow'
 import FunctionsJS from '@/components/js-components/functions'
-
 
 Vue.use(Router)
 
@@ -33,7 +33,13 @@ export default new Router({
       component: IntroJS
     },
     {
+      path: '/js-content/control-flow',
+      name: 'ControlFlow',
+      component: ControlFlow
+    },
+    {
       path: '/js-content/functions',
+      name: 'FunctionsJS',
       component: FunctionsJS
     }
   ]

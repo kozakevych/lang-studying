@@ -1,5 +1,5 @@
 <template>
-	
+  
           <div class="blog-post">
             <h2 class="blog-post-title">Control Flow</h2>
 
@@ -164,7 +164,7 @@ if (stopLight === 'red') {
   console.log('Stop');
 }</code></pre>
 
-   	<p>In the example above, we make sure that the stopLight is 'green' and (&&) there are no pedestrians before we log Go!.
+    <p>In the example above, we make sure that the stopLight is 'green' and (&&) there are no pedestrians before we log Go!.
     If either of those conditions is false, we log Stop.
 
 Just like the operators we learned previously, these logical operators will return either true or false.
@@ -256,5 +256,12 @@ The code in the example above will operate exactly as the code from the previous
     One equals symbol (=) is used to assign a value to a variable.
     Three equals symbols (===) are used to check if two variables are equal to each other.
 </p>
+</div>
 
 </template>
+
+<script>
+export default {
+  name: 'ControlFlow'
+}
+</script>

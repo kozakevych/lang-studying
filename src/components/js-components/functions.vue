@@ -1,5 +1,7 @@
 <template>
-	Introduction to Functions
+    <div class="container">
+        
+    Introduction to Functions
 
 A function is a block of code designed to perform a task.
 
@@ -218,10 +220,12 @@ This unit introduced you to functions.
     We can define parameters to be used when calling the function.
     When calling a function, we can pass in arguments, which will set the function's parameters.
     We can use return to return the result of a function which allows us to call functions anywhere, even inside other functions.
+
+    </div>
 </template>
 
 <script>
-	export default {
-		name: 'functions' 
-	}
+export default {
+  name: 'FunctionsJS'
+}
 </script>
