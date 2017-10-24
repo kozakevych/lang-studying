@@ -20,7 +20,7 @@
     <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
       	У цьому розділі, ми розглянемо типи даних і вбудовані методи. Це базові поняття для будь-якого JS розробника. В кінці розділу, ви знатимете як писати код, який обраховує математичні вирази, рахує довжину слова і генерує випадкові числа. 
-        <a href="/js-course/introduction-js">Читати далі</a>
+        <a href="/js-course/introduction-js">Почати</a>
       </div>
     </div>
   </div>

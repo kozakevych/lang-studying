@@ -15,85 +15,81 @@
 
     <p>У цьому розділі, ми розглянемо типи даних і вбудовані методи. Це базові поняття для будь-якого JS розробника. В кінці розділу, ви знатимете як писати код, який виконує математичні вирази, рахує довжину слова і генерує випадкові числа. </p>
 
-    <p>This lesson covers the building blocks of JavaScript. Make sure to take notes and pace yourself. This foundation will set you up for understanding more complex concepts later.</p>
 
-
-    <h3>Console</h3>
+    <h3>Консоль</h3>
     <hr />
 
-    <p>Before you learn about data types and methods, you need to know how to print values to the console. The console is a tool that developers use to record the output of their JavaScript programs.</p>
+    <p>Перед тим як познайомитися з типами даних і методами, давайте дізнаємося як виводити інформацію у консоль. Консоль - це інструмент який розробники використовують для того, щоб записувати вивід JS програм.</p>
 
-<p>The console.log() command is used to print, or log, text to the console. Consider the following example:</p>
+<p>Для виводу тексту в консоль використовується коменда console.log(). Розгляньмо наступний приклад:</p>
 
 <pre><code>console.log("Hello!");</code></pre>
 
-<p>In this example, Hello! is logged to the console. Notice, we denote the end of the line with a semicolon. Although your code will usually run as intended without a semicolon, it is best practice to always include one to ensure your code works as expected in situations when it does need one.</p>
+<p>Ця команда виведе текст "Hello!" в консоль. Зауважте, що ми поставили крапку з комою в кінці рядку. Хоча код виконався би і без цього, в світі JavaScript крапка з комою в кінці рядку вважається хорошою практикою.</p>
 
-<p>You'll see in the next exercise that you can put any data type inside the parentheses to print it to the console.</p>
+<p>У наступному прикладі ви побачите, що ви можете вивести значення будь-якого типу даних за допомогою консолі.</p>
 
-<h3>Data Types</h3>
+<h3>Типи даних</h3>
     <hr />
 
-<p>Data types are the building blocks of all languages and essential pieces of any program.</p>
+<p>Типи даних - це дуже важлива складова будь-якої мови програмування, і важлива частина всіх програм.</p>
 
-<p>Below are examples of four primitive data types that lay the foundation for all JavaScript programs. Primitive data types, as their name implies, are the simplest built-in forms of data.</p>
+<p>Нижче наведено приклади чотирьох типів даних які складають основу всіх JavaScript програм. Примітивні типи даних, власне тому і так називаються, бо є найпростішими вбудованими формами даних.</p>
 
 <pre><code>
-console.log('New York City');
-console.log(40.7);
+console.log(30.1);
+console.log('Lviv');
 console.log(true);
 console.log(null);
 </code></pre>
 
-<p>In the example above, the computer logs each of the four primitive data types to the console. The types include:</p>
+<p>У цьому прикладі, комп'ютер вивів кожен з чотирьох типів даних. Це такі типи даних:</p>
 
-<p>Strings — Any grouping of keyboard characters (letters, spaces, numbers, or symbols) surrounded by single quotes ('Hello') or double quotes ("World!"). In the example above, 'New York City' is a string.
-Numbers — Any number, including numbers with decimals: 4, 1516, .002, 23.42. In the example above, 40.7 is a number.
-Booleans — Either true or false, with no quotations. In the example above, true is a boolean.
-Null — Can only be null. It represents the absence of value.
-Let's review: a string is any grouping of words, a number's a number, null is the absence of value, and a boolean is a ghostly Halloween costume. Or no, that's false! It's either true or false.</p>
+<p>String (Стрічка) — Будь-яка послідовність символів з клавіатури (букви, пробіли, цифри), які обгорнуті в одинарні ('Hello') або подвійні лапки ("World!"). Серед цих прикладів, таким типом є 'Lviv'.
+Numbers (Числові значення) — Будь-які числові значення: 4, 1516, .002, 23.42.
+Booleans (Булевий тип даних) — Може приймати два значення true і false (правда/неправда), без лапок..
+Null (Нуль) — Може бути лише нулем. Він показує відсутність значення.</p>
 
-<h3>Math Operators</h3>
+<h3>Математичні оператори</h3>
     <hr />
 
-<p>Don't worry! Math doesn't need to be your strong-suit to learn JavaScript. However, there are operators you'll need to know to make useful programs.</p>
+<p>Не переймайтеся, вам не потрібно досконало знати математику, для того щоб вивчати JavaScript. Хоча, ці оператори потрібно знати, для того щоб вміти складати корисні програми.</p>
 
-<p>JavaScript supports the following math operators: </br>
+<p>У мові JavaScript є такі математичні оператори: </br>
 
-Add: + </br>
-Subtract: - </br>
-Multiply: * </br>
-Divide: / 
+Додавання: + </br>
+Віднімання: - </br>
+Множення: * </br>
+Ділення: / 
 </p>
 <p>
-These all work how you might guess:
+Ви можете догадатися, як вони працюють:
 </p>
 
 <pre><code>  
-console.log(3 + 4); // Equals 7
-console.log(5 - 1); // Equals 4
-console.log(4 * 2); // Equals 8
-console.log(9 / 3); // Equals 3
+console.log(3 + 4); // Дорівнює 7
+console.log(5 - 1); // Дорівнює 4
+console.log(4 * 2); // Дорівнює 8
+console.log(9 / 3); // Дорівнює 3
 </code></pre>
 
-<p>In the example above, each line uses a different mathematical operator to log a value to the console.</p>
-
-<h3>Properties</h3>
+<h3>Властивості</h3>
     <hr />
-<p>When you introduce a new piece of data into a JavaScript program, the browser saves it as an instance of the data type. An instance is an individual case (or object) of a data type.</p>
+<p>Коли ви хочете додати нові дані до вашої програми, браузер зберігає їх у певному екземплярі типів даних. Такий екземпляр є окремою одиницею або об'єктом типів даних.</p>
 
-<p>JavaScript will save a new piece of data, like 'Hello', as a string instance in the computer's memory. Another example, the number 40.7, is stored as an instance of the number data type.</p>
+<p>JavaScript збереже нові дані, такі як 'Hello', як стрічковий екземпляр у комп'ютерній пам'яті. Інший приклад, це 30.1, він буде зберігатися в числовому типі даних.</p>
 
-<p>An instance, like the string 'Hello', has additional information attached to it.</p>
+<p>Такий екземпляр, як стрічка 'Hello', містить ще додаткову інформацію про себе.</p>
 
-<p>For example, every string instance has a property called length that stores the number of characters in it. You can retrieve property information by appending the string with a period and the property name:</p>
+<p>Наприклад кожен екземпляр стрічки містить властивість, яка називається 'length' (довжина) що містить інформацію про кількість знакіів у стрічці. Ми можемо отримати дані про властивість звернувшись до стрічки, поставивши крапку, і назвавши властивість:</p>
 
 <pre><code>console.log('Hello'.length);</code></pre>
-<p>In the example above, the value saved to the length property is retrieved from the string, 'Hello'. The program prints 5 to the console, because Hello has five characters in it.</p>
+<p>У цьому прикладі, інформації збережена до властивості length буде отримана від стрічки, 'Hello'. Програма виведе 5 у консоль, тому що вона складається з 5 букв.</p>
 
 
-<h3>Built-in Methods</h3>
-    <hr />
+<h3>Вбудовані методи</h3>
+<hr />
+
 <p>While the length of a string is calculated when an instance is created, a string instance also has methods that calculate new information as needed. When these built-in methods are called on an instance, they perform actions that generate an output.</p>
 
 <p>Built-in methods are called, or used, by appending an instance with a period, the name of the method, and opening (() and closing ()) parentheses. Consider the examples below:</p>
@@ -102,62 +98,64 @@ console.log(9 / 3); // Equals 3
 console.log('Hey'.startsWith('H')); // true</code></pre>
 
 <p>
-Let's look at each line separately:
+Давайте розглянемо кожен рядок:
 </p>
+
 <p>
-On the first line, the .toUpperCase() method is called on the string instance 'Hello'. The result is logged to the console. This method returns a string in all capital letters: 'HELLO'.
-On the second line, the .startsWith() method is called on the string instance "Hey". This method also accepts the character 'H' as an input between the opening and closing parentheses. Since the string 'Hey' does start with the letter 'H', the method returns the boolean true.
-You can find a list of built-in string methods in the JavaScript documentation. Developers use documentation as a reference tool. It describes JavaScript's keywords, methods, and syntax.
+У першому рядку, на стрічку 'Hello' викликається метод .toUpperCase(). Результат виводиться на консоль. Метод повертає стрічку з усіма великими буквами: 'HELLO'.
+У другому рядку, викликається метод .startsWith() щодо стрічки 'Hey'. Цей метод також приймає 'H' як аргумент. Так як 'Hey' дійсно починається з 'H', метод повертає значення true.
+Ви можете знайти вбудованих методів для стрічок у документації JavaScript. Розробники часто використовують документацію. У ній міститься інформація про ключові поняття JavaScript, про методи та синтакс.
 </p>
 
 
-<h3>Libraries</h3>
+<h3>Бібліотеки</h3>
     <hr />
 <p>
 Instance methods, by definition, require that you create an instance before you can use them. What if you want to call a method without an instance? That's where JavaScript libraries come in. Libraries contain methods that you can call without creating an instance.
 </p>
 <p>
-One such collection contains mathematical methods, aptly named the Math library.
+Одна така колекція містить математичні методи, тому вона називається Math (Математична) бібліотека.
 </p>
 <p>
-Let's see how you call the .random() method from the Math library:
+Давайте розглянемо приклад використання методу .random() з бібліотеки Math:
 </p>
 <pre><code>
-console.log(Math.random()); // random number between 0 and 1
+console.log(Math.random()); // випадкове число між 0 і 1
 </code></pre>
 <p>
-In the example above, we called the .random() method by appending the library name with a period, the name of the method, and opening (() and closing ()) parentheses. This method returns a random number between 0 and 1. This code prints a random number between 0 and 1.
+У цьому прикладі, ми викликаємо метод .random() 
+In the example above, we called the .random() method by appending the library name with a period, the name of the method, and opening (() and closing ()) parentheses. Цей метод повертає випадкове число між 0 і 1.
 </p>
 <p>
-To generate a random number between 0 and 50, we could multiply this result by 50, like so:
+Для того щоб згенерувати випадкове число між 0 і 50, ми можемо помножити наш результат на 50:
 </p>
 <pre><code>Math.random() * 50;</code></pre>
 <p>
-The answer in the example above will most likely be a decimal. To ensure the answer is a whole number, JavaScript provides a built-in method called Math.floor(). Math.floor() takes a decimal number, and rounds down to the nearest whole number. You can use Math.floor() to round a random number like this:
+У прикладі скоріш за все результат покаже decimal. Для того щоб у відповіді було ціле число, є метод, який називається Math.floor(). Цей метод decimal number, і заокруглює його до найближчого цілого числа. Отож, ми можемо використати метод Math.floor() щоб отримати ціле число:
 </p>
 
 <pre><code>Math.floor(Math.random() * 50);</code></pre>
-<p>In this case:</p>
+<p>У цьому випадку:</p>
 
 <p>
-Math.random generates a random number between 0 and 1.
-We then multiply that number by 50, so now we have a number between 0 and 50.
-Then, Math.floor rounds the number down to the nearest whole number.
+Math.random генерує a випадкове число між 0 і 1.
+Ми множимо це число на 50, отже ми отримаємо результат між 0 і 50.
+Тоді, Math.floor заокруглить це число до найближчого цілого.
 </p>
 
-<h3>Comments</h3>
+<h3>Коментарі</h3>
     <hr />
-<p>As we write JavaScript, we can create comments in our code.</p>
+<p>У JavaScript, ми можемо також робити коментарі.</p>
 
-<p>Programs do not evaluate comments when you run them. In other words, they exist just for human readers. Good comments are useful for you and other developers, because they describe what the code does.</p>
+<p>Програма не візьме до уваги коментарі, під час запуску. Тобто, вони існують лише для людського ока. Хороші коментарі можуть бути дуже корисними для інших розробників, тому що в них описано, як працює код.</p>
 
-<p>There are two types of code comments in JavaScript:</p>
+<p>Є два типи коментарів у JS:</p>
 
-<p>A single line comment will comment out a single line and is denoted with two forward slashes // preceding a line of JavaScript code.</p>
+<p>Однорядковий коментар, який займає один рядок і починається двома слешами //.</p>
 
 <pre><code>// The first 5 decimals of pi
 console.log('Pi is equal to ' + 3.14159);</code></pre>
-<p>A multi-line comment will comment out multiple lines and is denoted with /* to begin the comment, and */ to end the comment.</p>
+<p>Багаторядковий коментар який займає кілька рядків, починається з /*, і закривається */.</p>
 <pre><code>
 /*
 console.log('All of this code');
@@ -166,19 +164,19 @@ console.log('And will not be executed);
 */
 </code></pre>
 
-<h3>Review Types and Operators</h3>
+<h3>Підсумок: Типи і оператори</h3>
     <hr />
 <p>
-Let's take one more glance at the concepts we just learned:
+  Давайте зробимо ще один погляд на те, що ми сьогодні вивчили.
 </p>
 <p>
-Four essential data types in JavaScript include strings, numbers, booleans, and null.
-Data is printed, or logged, to the console with console.log().
-Four built-in mathematical operators include +, -, *, and /.
-JavaScript associates certain properties with different data types.
-JavaScript has built-in methods for different data types.
-Libraries are collections of methods that can be called without an instance.
-You can write single-line comments with // and multi-line comments between /* and */.
+Є чотири типи даних у JavaScript: стрічки, числа, булеві типи і нуль (strings, numbers, booleans, and null).
+Вивести дані у консоль можна за допомогою команди console.log()
+Є чотири математичні оператори +, -, * і /.
+JavaScript поєднує певні властивості з певними типами даних.
+JavaScript містить вбудовані методи для різних тип даних.
+Бібліотеки - це колекції методів, які можуть викликатися без instance.
+Можна писати як однорядкові коментарі за допомогою // так і багаторядкові коментарі між /* і */.
 </p>
 </div><!-- /.blog-post -->
 
