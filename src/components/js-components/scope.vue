@@ -1,67 +1,67 @@
 <template>
 	<div class="container">
-		Scope
+		<h2>Scope</h2>
 
-Scope refers to where a variable can be accessed in a program. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. Scope depends entirely on where a variable is declared.
+<p>Scope refers to where a variable can be accessed in a program. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. Scope depends entirely on where a variable is declared.</p>
 
-You can think of scope like the view of the night sky from your window. Everyone who lives on the planet Earth is in the global scope of the stars. The stars are accessible globally. Meanwhile, if you live in a city, you may see the city skyline or the river. The skyline and river are only accessible locally in your city, but you can still see the stars that are available globally.
+<p>You can think of scope like the view of the night sky from your window. Everyone who lives on the planet Earth is in the global scope of the stars. The stars are accessible globally. Meanwhile, if you live in a city, you may see the city skyline or the river. The skyline and river are only accessible locally in your city, but you can still see the stars that are available globally.</p>
 
-We'll learn more about scope in this lesson through the use of variables.
+<p>We'll learn more about scope in this lesson through the use of variables.</p>
 
-Global Scope
+<h3>Global Scope</h3>
 
-We'll start with global scope. Variables defined in the global scope are declared outside of a set of curly braces {}, referred to as a block, and are thus available throughout a program. We'll cover more on blocks in subsequent exercises.
+<p>We'll start with global scope. Variables defined in the global scope are declared outside of a set of curly braces {}, referred to as a block, and are thus available throughout a program. We'll cover more on blocks in subsequent exercises.</p>
 
-Let's take a look at an example of global scope.
+<p>Let's take a look at an example of global scope.</p>
 
-const color = 'blue'
+<pre><code>const color = 'blue'
 
 const colorOfSky = () => {
   return color; // blue 
 };
 
-console.log(colorOfSky()); // blue
+console.log(colorOfSky()); // blue</code></pre>
 
-    Here the variable color is declared outside of the function block, giving it global scope.
-    In turn, color can be accessed within the colorOfSky function.
+    <p>Here the variable color is declared outside of the function block, giving it global scope.
+    In turn, color can be accessed within the colorOfSky function.</p>
 
-Global variables make data accessible from any place within a program.
+<p>Global variables make data accessible from any place within a program.</p>
 
 
-Global Scope II
+<h3>Global Scope II</h3>
 
-While it's important to know what global scope is, it's better to avoid defining variables in the global scope. Globally scoped variables can collide with variables that are more locally scoped, causing unexpected behavior in our code.
+<p>While it's important to know what global scope is, it's better to avoid defining variables in the global scope. Globally scoped variables can collide with variables that are more locally scoped, causing unexpected behavior in our code.</p>
 
-Let's explore our program a little further.
+<p>Let's explore our program a little further.</p>
 
-Block Scope
+<h3>Block Scope</h3>
 
-Because of the challenges with global scope, it is preferable to define variables in block scope.
+<p>Because of the challenges with global scope, it is preferable to define variables in block scope.</p>
 
-A block refers to the {} braces of a function, a loop, or an if statement, and serves as an important structural marker for our code. Block scope means that a variable defined in the block is only accessible within the curly braces.
+<p>A block refers to the {} braces of a function, a loop, or an if statement, and serves as an important structural marker for our code. Block scope means that a variable defined in the block is only accessible within the curly braces.</p>
 
-Block scope works like this:
+<p>Block scope works like this:</p>
 
-const colorOfSky = () => {
+<pre><code>const colorOfSky = () => {
   let color = 'blue'; 
   console.log(color); // blue 
 };
 
 colorOfSky(); // blue 
-console.log(color); // undefined
+console.log(color); // undefined</code></pre>
 
-You'll notice:
+<p>You'll notice:</p>
 
-    We define a function colorOfSky().
+    <p>We define a function colorOfSky().
     Within the function, the color variable is only available within the curly braces of the function.
-    If we try to log the same variable outside the function, it logs undefined.
+    If we try to log the same variable outside the function, it logs undefined.</p>
 
 
-Block Scope II
+<h3>Block Scope II</h3>
 
-Let's take a look at another example of block scope, as defined within an if block:
+<p>Let's take a look at another example of block scope, as defined within an if block:</p>
 
-const colorOfSky = () => {
+<pre><code>const colorOfSky = () => {
   const dusk = true;
   let color = 'blue'; 
   if (dusk) {
@@ -72,22 +72,22 @@ const colorOfSky = () => {
 };
 
 colorOfSky(); // blue
-console.log(color); // undefined
+console.log(color); // undefined</code></pre>
 
-Here, you'll notice:
+<p>Here, you'll notice:</p>
 
-    We create a variable dusk inside the colorOfSky() function.
+    <p>We create a variable dusk inside the colorOfSky() function.
     After the if statement, we define a new code block with the {} braces. Here we assign a new value to the variable color if the if statement is true.
-    Within the if block, the color variable holds the value pink, though outside the if block, in the function body, the color variable holds the value blue.
+    Within the if block, the color variable holds the value pink, though outside the if block, in the function body, the color variable holds the value blue.</p>
 
-Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not pollute the global namespace.
+<p>Block scope is a powerful tool in JavaScript, since it allows us to define variables with precision, and not pollute the global namespace.</p>
 
 
-Block Scope III
+<h3>Block Scope III</h3>
 
-Let's take a look at one other common example of block scope, as defined within a for loop.
+<p>Let's take a look at one other common example of block scope, as defined within a for loop.</p>
 
-const cloudCount = () => {
+<pre><code>const cloudCount = () => {
   let i = 2;
   console.log(i); // 2
   for (let i = 0; i < 10; i++) {
@@ -96,19 +96,19 @@ const cloudCount = () => {
 };
 
 cloudCount();
-console.log(i); // undefined
+console.log(i); // undefined</code></pre>
 
-    Here the variable i is defined in the cloudCount() function.
+    <p>Here the variable i is defined in the cloudCount() function.
     Within the for loop block, we again define i, as a value that will be incremented.
-    The local value of i, whether defined in the function block or the for loop, has no impact on the global scope of our program.
+    The local value of i, whether defined in the function block or the for loop, has no impact on the global scope of our program.</p>
 
-Review: Scope
+<h3>Review: Scope</h3>
 
-This unit introduced you to scope.
+<p>This unit introduced you to scope.</p>
 
-    Scope is the idea in programming that some variables are accessible/inaccessible from other parts of the program.
+    <p>Scope is the idea in programming that some variables are accessible/inaccessible from other parts of the program.
     Global Scope refers to variables that are accessible to every part of the program.
-    Block Scope refers to variables that are accessible only within the block they are defined.
+    Block Scope refers to variables that are accessible only within the block they are defined.</p>
 
 
 	</div>

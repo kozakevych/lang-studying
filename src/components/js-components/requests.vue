@@ -73,6 +73,5 @@ The first two lines of this request are identical to the first two lines of the 
 The object containing this data is passed to the JSON.stringify() method, which will format the object as a string. This is saved to a const called data.
 
 Everything else remains the same until the final two lines. When we call the .open() method on the xhr object, we pass the argument 'POST' instead of 'GET'. Finally, we pass the data string to the .send() method.
-
 	</div>
 </template>

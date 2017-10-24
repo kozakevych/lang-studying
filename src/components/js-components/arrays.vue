@@ -1,55 +1,55 @@
 <template>
 	<div class="container">
-		Arrays
+		<h3>Arrays</h3>
 
-A foundational concept of programming is how to organize and store data.
+<p>A foundational concept of programming is how to organize and store data.</p>
 
-One way we organize data in real life is to make lists. Let's make one here:
+<p>One way we organize data in real life is to make lists. Let's make one here:</p>
 
-New Year's Resolutions:
+<p>New Year's Resolutions:
 1. Rappel into a cave
 2. Take a falconry class
-3. Learn to juggle
+3. Learn to juggle</p>
 
-Let's now write this list in JavaScript, as an array:
+<p>Let's now write this list in JavaScript, as an array:</p>
 
-let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];
+<pre><code>let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];</code></pre>
 
-Arrays are JavaScript's way of making lists. These lists can store any data types (including strings, numbers, and booleans) and they are ordered, meaning each item has a numbered position.
-
-
-Create an array
-
-Let's start by making an array and then seeing what it can do throughout the rest of this lesson.
+<p>Arrays are JavaScript's way of making lists. These lists can store any data types (including strings, numbers, and booleans) and they are ordered, meaning each item has a numbered position.</p>
 
 
-Property Access
+<h3>Create an array</h3>
 
-Each item in an array has a numbered position. We can access individual items using their numbers, just like we would in an ordinary list.
+<p>Let's start by making an array and then seeing what it can do throughout the rest of this lesson.</p>
 
-Something important to note is that JavaScript starts counting from 0 rather than 1, so the first item in an array will be at position 0. This is because JavaScript is zero-indexed.
 
-We can select the first item in an array like this:
+<h3>Property Access</h3>
 
-let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];
+<p>Each item in an array has a numbered position. We can access individual items using their numbers, just like we would in an ordinary list.</p>
+
+<p>Something important to note is that JavaScript starts counting from 0 rather than 1, so the first item in an array will be at position 0. This is because JavaScript is zero-indexed.
+
+We can select the first item in an array like this:</p>
+
+<pre><code>let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class', 'Learn to juggle'];
 
 console.log(newYearsResolutions[0]);
-// Output: 'Rappel into a cave'
+// Output: 'Rappel into a cave'</code></pre>
 
-You can also access individual characters in a string. For instance, you can write:
+<p>You can also access individual characters in a string. For instance, you can write:</p>
 
-let hello = 'Hello World';
+<pre><code>let hello = 'Hello World';
 console.log(hello[6]);
-// Output: W
+// Output: W</code></pre>
 
-W will be the output since it's the character in the 6th position. This works because JavaScript stores strings in a similar way that it stores arrays.
+<p>W will be the output since it's the character in the 6th position. This works because JavaScript stores strings in a similar way that it stores arrays.</p>
 
 
-Update Elements
+<h3>Update Elements</h3>
 
-In the previous exercise, you learned how to access elements of an array or a string using their index number. You can also change elements of an array using their indices.
+<p>In the previous exercise, you learned how to access elements of an array or a string using their index number. You can also change elements of an array using their indices.</p>
 
-let seasons = ["Winter", "Spring", "Summer", "Fall"];
+<pre><code>let seasons = ["Winter", "Spring", "Summer", "Fall"];
 
 seasons[3] = "Autumn";
 console.log(seasons) 
@@ -57,84 +57,84 @@ console.log(seasons)
 //Winter 
 //Spring
 //Summer
-//Autumn
+//Autumn</code></pre>
 
-In the example above, the seasons array contained the names of the four seasons.
+<p>In the example above, the seasons array contained the names of the four seasons.</p>
 
-However, we decided that we preferred to say "Autumn" instead of "Fall".
+<p>However, we decided that we preferred to say "Autumn" instead of "Fall".</p>
 
-seasons[3] = "Autumn"; tells our program to change the item at index 3 of the seasons array to be "Autumn" instead of what is already there.
+<p>seasons[3] = "Autumn"; tells our program to change the item at index 3 of the seasons array to be "Autumn" instead of what is already there.</p>
 
-length property
+<h3>length property</h3>
 
-We may wish to know how many items are stored inside of an array.
+<p>We may wish to know how many items are stored inside of an array.</p>
 
-We can find this out by using one of an array's built-in properties, called length. We can attach this to any variable holding an array and it will return the number of items inside.
+<p>We can find this out by using one of an array's built-in properties, called length. We can attach this to any variable holding an array and it will return the number of items inside.</p>
 
-let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class'];
+<pre><code>let newYearsResolutions = ['Rappel into a cave', 'Take a falconry class'];
 
 console.log(newYearsResolutions.length);
-// Output: 2
+// Output: 2</code></pre>
 
-In the example above, we log newYearsResolutions.length to the console. This code retrieves the length property of the newYearsResolutions array and logs it to the console. This array has two items, so 2 would be logged to the console.
+<p>In the example above, we log newYearsResolutions.length to the console. This code retrieves the length property of the newYearsResolutions array and logs it to the console. This array has two items, so 2 would be logged to the console.</p>
 
-push Method
+<h3>push Method</h3>
 
-JavaScript has built in methods for arrays that help us do common tasks. Let's learn some of them.
+<p>JavaScript has built in methods for arrays that help us do common tasks. Let's learn some of them.</p>
 
-First, .push() allows us to add items to the end of an array. Here is an example of how this is used:
+<p>First, .push() allows us to add items to the end of an array. Here is an example of how this is used:</p>
 
-let newYearsResolutions = ['item 0', 'item 1', 'item 2'];
+<pre><code>let newYearsResolutions = ['item 0', 'item 1', 'item 2'];
 
 newYearsResolutions.push('item 3', 'item 4');
+</code></pre>
+<p>The method .push() would make the newYearsResolutions array look like:</p>
 
-The method .push() would make the newYearsResolutions array look like:
+<pre><code>['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];</code></pre>
 
-['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+<p>How does .push() work?</p>
 
-How does .push() work?
+    <p>It connects to newYearsResolutions with a period.</p>
 
-    It connects to newYearsResolutions with a period.
+    <p>Then we call it like a function. That's because .push() is a function and one that JavaScript allows us to use right on an array.</p>
 
-    Then we call it like a function. That's because .push() is a function and one that JavaScript allows us to use right on an array.
+<p>Another array method, .pop(), is similar to .push(). This method removes the last item of an array.</p>
 
-Another array method, .pop(), is similar to .push(). This method removes the last item of an array.
-
-let newYearsResolutions = ['item 0', 'item 1', 'item 2'];
+<pre><code>let newYearsResolutions = ['item 0', 'item 1', 'item 2'];
 
 newYearsResolutions.pop();
 
 console.log(newYearsResolutions); 
-// Output: [ 'item 0', 'item 1' ]
+// Output: [ 'item 0', 'item 1' ]</code></pre>
 
-In the example above, calling .pop() on the newYearsResolutions array removed item 2 from the end.
+<p>In the example above, calling .pop() on the newYearsResolutions array removed item 2 from the end.</p>
 
 
-More Array Methods
+<h3>More Array Methods</h3>
 
-There are many more array methods than just .push() and .pop(). You can read about all of the array methods that exist on the Mozilla Developer Network (MDN) documentation.
+<p>There are many more array methods than just .push() and .pop(). You can read about all of the array methods that exist on the Mozilla Developer Network (MDN) documentation.</p>
 
-.pop() and .push() modify the array on which they're called. However, there are some array methods that don't modify the array. Be sure to check MDN to understand the behavior of the method you are using.
+<p>.pop() and .push() modify the array on which they're called. However, there are some array methods that don't modify the array. Be sure to check MDN to understand the behavior of the method you are using.</p>
 
-Some methods that JavaScript developers use frequently are .join(), .slice(), .splice(), .shift(), .unshift(), and .concat() amongst many others.
+<p>Some methods that JavaScript developers use frequently are .join(), .slice(), .splice(), .shift(), .unshift(), and .concat() amongst many others.</p>
 
-Below, we will explore some methods that we have not learned yet. We will use these methods to edit a grocery list. As you complete the steps, you can consult the MDN documentation to learn what each method does!
+<p>Below, we will explore some methods that we have not learned yet. We will use these methods to edit a grocery list. As you complete the steps, you can consult the MDN documentation to learn what each method does!</p>
 
-Arrays with let and const
+<h3>Arrays with let and const</h3>
 
-You may recall that you can declare variables with both the let and const keywords. Variables declared with let can be reassigned.
+<p>You may recall that you can declare variables with both the let and const keywords. Variables declared with let can be reassigned.</p>
 
-Variables that are assigned with const cannot be reassigned. However, arrays that are declared with const remain mutable, or changeable.
+<p>Variables that are assigned with const cannot be reassigned. However, arrays that are declared with const remain mutable, or changeable.</p>
 
-This means that we can change the contents of an array, but cannot reassign the variable name to a new array or other data type.
+<p>This means that we can change the contents of an array, but cannot reassign the variable name to a new array or other data type.</p>
 
-The instructions below will illustrate this more clearly. Pay close attention to the similiarities and differences between the condiments array and the utensils array as you complete the steps.
+<p>The instructions below will illustrate this more clearly. Pay close attention to the similiarities and differences between the condiments array and the utensils array as you complete the steps.</p>
 
-Review Arrays
+<h3>Review Arrays</h3>
 
-Nice work! In this lesson, we learned these concepts regarding arrays:
+<p>Nice work! In this lesson, we learned these concepts regarding arrays:</p>
 
-    Arrays are lists and are a way to store data in JavaScript.
+    <p>Arrays are lists and are a way to store data in JavaScript.
     Arrays are created with brackets [].
     Each item inside of an array is at a numbered position, starting at 0.
     We can access one item in an array using its numbered position, with syntax like: myArray[0].
@@ -142,7 +142,7 @@ Nice work! In this lesson, we learned these concepts regarding arrays:
     Arrays have a length property, which allows you to see how many items are in an array.
     Arrays have their own methods, including .push() and .pop(), which add and remove items from an array, respectively.
     Arrays have many other methods that perform different functions, such as .slice() and .shift(). You can read the documentation for any array method on the Mozilla Developer Network website.
-    Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable; they can be changed. However, a variable declared with const cannot be reassigned.
+    Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable; they can be changed. However, a variable declared with const cannot be reassigned.</p>
 
 
 	</div>
