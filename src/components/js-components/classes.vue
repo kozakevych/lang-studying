@@ -1,5 +1,7 @@
 <template>
-	<div class="container">
+
+  <div class="blog-post text-left">
+
 		<h3>Introduction to Classes</h3>
 
 <p>JavaScript is an object-oriented programming (OOP) language we can use to model real-world items. In this lesson, you will learn how to make classes. Classes are a tool that developers use to quickly produce similar objects.</p>

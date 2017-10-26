@@ -1,6 +1,8 @@
 <template>
-	<div class="container">
-		Hello Modules
+	
+  <div class="blog-post text-left">
+
+  	Hello Modules
 
 JavaScript modules are reusable pieces of code that can be exported from one program and imported for use in another program.
 

@@ -1,5 +1,7 @@
 <template>
-	<div class="container">
+	
+  <div class="blog-post text-left">
+
 		Introduction to Requests
 
 There are numerous reasons why JavaScript is the preferred language of the web. Amongst the most important reasons are JavaScript's non-blocking properties, or that it is an asynchronous language.

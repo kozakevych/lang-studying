@@ -1,6 +1,7 @@
 <template>
-	<div class="container">
-		
+	
+  <div class="blog-post text-left">
+	
 		Introduction to JavaScript Objects
 
 By the end of this lesson, you'll have the knowledge and skills to produce your own JavaScript objects.

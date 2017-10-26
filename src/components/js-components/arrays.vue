@@ -1,6 +1,8 @@
 <template>
-	<div class="container">
-		<h3>Arrays</h3>
+
+  <div class="blog-post text-left">
+
+	<h3>Arrays</h3>
 
 <p>A foundational concept of programming is how to organize and store data.</p>
 

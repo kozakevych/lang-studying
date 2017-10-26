@@ -27,4 +27,12 @@
   }
 </script>
 
+<style>
+  pre {
+    display: inline-block;
+    padding: 20px;
+    color: #afeaff;
+    background: #243b60;
+  }
+</style>
 

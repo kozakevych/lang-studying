@@ -1,5 +1,7 @@
 <template>
-<div class="container">
+
+  <div class="blog-post text-left">
+
 	
 	Introduction
 
