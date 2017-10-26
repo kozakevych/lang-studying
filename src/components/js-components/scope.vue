@@ -1,5 +1,11 @@
 <template>
 	<div class="blog-post text-left">
+        <nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
+        <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Функції</router-link>
+      </ol>
+    </nav>
 		<h2>Scope</h2>
 
 <p>Scope refers to where a variable can be accessed in a program. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. Scope depends entirely on where a variable is declared.</p>

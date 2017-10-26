@@ -1,7 +1,12 @@
 <template>
 	
   <div class="blog-post text-left">
-
+    <nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
+        <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Функції</router-link>
+      </ol>
+    </nav>
   	Hello Modules
 
 JavaScript modules are reusable pieces of code that can be exported from one program and imported for use in another program.

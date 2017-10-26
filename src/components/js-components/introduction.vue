@@ -1,7 +1,13 @@
 <template>
 
 	<div class="introduction-js">
-		
+		<nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
+    <ol class="breadcrumb">
+        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
+        <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Вступ до JavaScript</router-link>
+    </ol>
+    </nav>
+  
     <div class="blog-post text-left">
 
     <h1 class="blog-post-title">{{ title }}</h1>

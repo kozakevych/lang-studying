@@ -1,7 +1,12 @@
 <template>
 	
   <div class="blog-post text-left">
-
+    <nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
+        <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Функції</router-link>
+      </ol>
+    </nav>
 		Introduction to Requests
 
 There are numerous reasons why JavaScript is the preferred language of the web. Amongst the most important reasons are JavaScript's non-blocking properties, or that it is an asynchronous language.

@@ -3,7 +3,7 @@
 		
 <div class="jumbotron-js rounded">
         <div class="container">
-          <h1 class="display-5">JavaScript</h1>
+          <h1 class="display-5 course-name">JavaScript</h1>
         </div>
       </div>
 

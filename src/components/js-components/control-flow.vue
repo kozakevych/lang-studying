@@ -1,5 +1,12 @@
 <template>
   <div class="blog-post text-left">
+    <nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
+        <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Управління потоком</router-link>
+      </ol>
+    </nav>
+
     <h2 class="blog-post-title">Управління потоком</h2>
 
 <hr />

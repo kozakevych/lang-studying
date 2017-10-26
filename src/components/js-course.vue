@@ -3,13 +3,6 @@
 	<div class="viever-js">
 		
     <div class="blog-post">
-  <nav class="breadcrumbs-content" aria-label="breadcrumb" role="navigation">
-    <ol class="breadcrumb">
-        <router-link to="/js-course/" class="breadcrumb-item">Повернутися до змісту</router-link>
-        
-        <!-- <breadcrumbs></breadcrumbs> -->
-    </ol>
-  </nav>
   
   
     
@@ -33,6 +26,10 @@
     padding: 20px;
     color: #afeaff;
     background: #243b60;
+  }
+
+  .course-name {
+    font-family: "Comic Sans MS", cursive, sans-serif;
   }
 </style>
 
