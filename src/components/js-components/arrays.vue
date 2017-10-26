@@ -144,6 +144,22 @@ console.log(newYearsResolutions);
     Arrays have many other methods that perform different functions, such as .slice() and .shift(). You can read the documentation for any array method on the Mozilla Developer Network website.
     Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable; they can be changed. However, a variable declared with const cannot be reassigned.</p>
 
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/scope" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/loops" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 
 	</div>
 </template>
+
+<script>
+  export default {
+    name: 'arrays'
+  }
+</script>

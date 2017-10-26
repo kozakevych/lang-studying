@@ -1,5 +1,5 @@
 <template>
-	<div class="container">
+	<div class="blog-post text-left">
 		<h2>Scope</h2>
 
 <p>Scope refers to where a variable can be accessed in a program. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. Scope depends entirely on where a variable is declared.</p>
@@ -110,6 +110,21 @@ console.log(i); // undefined</code></pre>
     Global Scope refers to variables that are accessible to every part of the program.
     Block Scope refers to variables that are accessible only within the block they are defined.</p>
 
-
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/functions" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/arrays" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 	</div>
 </template>
+
+<script>
+  export default {
+    name: 'scope'
+  }
+</script>

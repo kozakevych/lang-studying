@@ -179,6 +179,13 @@ JavaScript містить вбудовані методи для різних т
 Можна писати як однорядкові коментарі за допомогою // так і багаторядкові коментарі між /* і */.
 </p>
 </div><!-- /.blog-post -->
+  <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/control-flow" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 
 	</div>
 </template>

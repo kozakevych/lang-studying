@@ -260,7 +260,18 @@ console.log('The temperature is ' + getFahrenheit(15) + '°F');</code></pre>
     We can define parameters to be used when calling the function.
     When calling a function, we can pass in arguments, which will set the function's parameters.
     We can use return to return the result of a function which allows us to call functions anywhere, even inside other functions.</p>
+  <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/control-flow" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/scope" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
   </div>
+
 </template>
 
 <script>

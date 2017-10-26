@@ -137,6 +137,22 @@ Great job! In this lesson, we learned how to write less repetitive code with loo
     while loops are for looping over a code block an unknown amount of times.
     Infinite loops occur when stop conditions are never met.
 
-
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/arrays" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/iterators" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 	</div>
 </template>
+
+
+<script>
+  export default {
+    name: 'browser-compatibility'
+  }
+</script>

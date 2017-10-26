@@ -113,6 +113,22 @@ You have learned a number of useful methods in this lesson as well as how to use
     You can visit the Mozilla Developer Network to learn more about iterator methods (and all other parts of JavaScript!).
     Additional iterator methods such as .some(), .every(), .reduce() perform different functions.
 
-
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/loops" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/objects" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 	</div>
 </template>
+
+
+<script>
+  export default {
+    name: 'browser-compatibility'
+  }
+</script>

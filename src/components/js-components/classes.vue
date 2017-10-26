@@ -469,6 +469,22 @@ tyson.generateName(); // TypeError</code></pre>
     Static methods are called on the class, but not on instances of the class.</p>
 
 <p>In completing this lesson, you've taken one step closer to writing efficient, production-level JavaScript. Good luck as you continue to develop your skills and move into intermediate-level concepts.</p>
-
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/objects" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/browser-compatibility" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 	</div>
 </template>
+
+
+<script>
+  export default {
+    name: 'classes'
+  }
+</script>

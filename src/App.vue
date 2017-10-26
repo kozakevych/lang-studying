@@ -18,7 +18,7 @@
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курси</a>
               <div class="dropdown-menu" aria-labelledby="dropdown09">
-                <a class="dropdown-item" href="/js-content">JavaScript</a>
+                <a class="dropdown-item" href="/js-course">JavaScript</a>
                 <a class="dropdown-item disabled" href="#">Python (У розробці)</a>
                 <a class="dropdown-item disabled" href="#">TypeScript (У розробці)</a>
               </div>

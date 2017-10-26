@@ -416,7 +416,24 @@ Way to go! Let's review what we learned in this lesson:
     A method is a function in an object.
     this helps us with scope inside of object methods. this is a dynamic variable that can change depending on the object that is calling the method.
     Getter and setter methods allow you to process data before accessing or setting property values.
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/loops" class="page-link">Попередній розділ</router-link>
+    </li>
+    <li class="page-item">
+      <router-link to="/js-course/classes" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 
 
 	</div>
 </template>
+
+
+<script>
+  export default {
+    name: 'browser-compatibility'
+  }
+</script>

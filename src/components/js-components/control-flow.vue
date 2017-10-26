@@ -1,7 +1,6 @@
 <template>
-  
-          <div class="blog-post">
-            <h2 class="blog-post-title">Управління потоком</h2>
+  <div class="blog-post text-left">
+    <h2 class="blog-post-title">Управління потоком</h2>
 
             
 <p>
@@ -298,12 +297,28 @@ The code in the example above will operate exactly as the code from the previous
     One equals symbol (=) is used to assign a value to a variable.
     Three equals symbols (===) are used to check if two variables are equal to each other.
 </p>
+ <nav class="page-navigation" aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <router-link to="/js-course/introduction-js" class="page-link">Попередній розділ</router-link>
+      <!-- <a class="page-link" href="#" tabindex="-1">Попередній розділ</a> -->
+    </li>
+    <li class="page-item">
+      <!-- <a href="#"></a> -->
+      <router-link to="/js-course/functions" class="page-link">Наступний розділ</router-link>
+    </li>
+  </ul>
+  </nav>
 </div>
-
 </template>
 
 <script>
 export default {
-  name: 'ControlFlow'
+  name: 'ControlFlow',
+  data () {
+    return {
+      title: 'Потік'
+    }
+  }
 }
 </script>

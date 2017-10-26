@@ -16,7 +16,7 @@
           <img class="rounded-circle" src="../assets/js-logo.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>JavaScript</h2>
           <p>Широко розповсюджена мова веб програмування, яка забезпечує динамічну поведінку елементів на більшості веб-сайтів.</p>
-          <p><a class="btn btn-secondary" href="/js-content" role="button">Перейти до курсу &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/js-course/" role="button">Перейти до курсу &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="../assets/python-logo.jpg" alt="Generic placeholder image" width="140" height="140">
