@@ -3,33 +3,33 @@
   <div class="blog-post text-left">
 
 	
-	Introduction
+	<h2>Introduction</h2>
 
-You're probably prompted to update your web browser every few months. Do you know why? A few reasons include addressing security vulnerabilities, adding features, and supporting new HTML, CSS, and JavaScript syntax.
+<p>You're probably prompted to update your web browser every few months. Do you know why? A few reasons include addressing security vulnerabilities, adding features, and supporting new HTML, CSS, and JavaScript syntax.</p>
 
-The reasons above imply there is a period before a software update is released when there are security vulnerabilities and unsupported language syntax.
+<p>The reasons above imply there is a period before a software update is released when there are security vulnerabilities and unsupported language syntax.</p>
 
-This lesson focuses on the latter. Specifically, how developers address the gap between the new JavaScript syntax that they use, and the JavaScript syntax that web browsers recognize.
+<p>This lesson focuses on the latter. Specifically, how developers address the gap between the new JavaScript syntax that they use, and the JavaScript syntax that web browsers recognize.</p>
 
-This has become a widespread concern for web developers since Ecma International, the organization responsible for standardizing JavaScript, released a new version of it in 2015, called ECMAScript2015, commonly referred to as ES6. Note, the 6 refers to the version of JavaScript and is not related to the year it was released (the previous version was ES5).
+<p>This has become a widespread concern for web developers since Ecma International, the organization responsible for standardizing JavaScript, released a new version of it in 2015, called ECMAScript2015, commonly referred to as ES6. Note, the 6 refers to the version of JavaScript and is not related to the year it was released (the previous version was ES5).</p>
 
-Upon release, web developers quickly adopted the new ES6 syntax, as it improved readability and efficiency. However, ES6 was not supported by most web browsers, so developers ran into browser compatibility issues.
+<p>Upon release, web developers quickly adopted the new ES6 syntax, as it improved readability and efficiency. However, ES6 was not supported by most web browsers, so developers ran into browser compatibility issues.</p>
 
-In this lesson, you will learn about two important tools for addressing browser compatibility issues.
+<p>In this lesson, you will learn about two important tools for addressing browser compatibility issues.</p>
 
-  caniuse.com — A website that provides data on web browser compatibility for HTML, CSS, and JavaScript features. You will learn how to use it to look up ES6 feature support.
-  Babel — A Javascript library that you can use to convert new, unsupported JavaScript (ES6), into an older version (ES5) that is recognized by most modern browsers.
+  <p>caniuse.com — A website that provides data on web browser compatibility for HTML, CSS, and JavaScript features. You will learn how to use it to look up ES6 feature support.<br />
+  Babel — A Javascript library that you can use to convert new, unsupported JavaScript (ES6), into an older version (ES5) that is recognized by most modern browsers.</p>
 
-Let's get started by running ES6 JavaScript on a fake old web browser version.
+<p>Let's get started by running ES6 JavaScript on a fake old web browser version.</p>
 
-caniuse.com I
+<h3>caniuse.com I</h3>
 
-Since Ecma's release of ECMAScript2015 (ES6), software companies have slowly added support for ES6 features and syntax. While most new browser versions support the majority of the ES6 library, there are still a couple sources of compatibility issues:
+<p>Since Ecma's release of ECMAScript2015 (ES6), software companies have slowly added support for ES6 features and syntax. While most new browser versions support the majority of the ES6 library, there are still a couple sources of compatibility issues:</p>
 
-  Some users have not updated to the latest, ES6 supported web browser version.
-  A few ES6 features, like modules, are still not supported by most web browsers.
+  <p>Some users have not updated to the latest, ES6 supported web browser version.
+  A few ES6 features, like modules, are still not supported by most web browsers.</p>
 
-Because companies add support for ES6 features gradually, it's important for you to know how to look up browser support on a feature-by-feature basis. The website caniuse.com is the best resource for finding browser compatibility information.
+<p>Because companies add support for ES6 features gradually, it's important for you to know how to look up browser support on a feature-by-feature basis. The website caniuse.com is the best resource for finding browser compatibility information.</p>
 
 In caniuse, you can enter an ES6 feature, like let, and see the percentage of browsers that recognize it. You can also see when each major web browser (Chrome, Safari, Edge, etc.) added support for the keyword.
 

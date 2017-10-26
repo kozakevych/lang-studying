@@ -2,6 +2,7 @@
   <div class="blog-post text-left">
     <h2 class="blog-post-title">Управління потоком</h2>
 
+<hr />
             
 <p>
 У цьому уроці, ми спробуємо розібратись, як можна використовувати компоненти JavaScript для того щоб писати програми які приймають рішення. 
@@ -18,6 +19,8 @@ In this lesson, we'll learn how to make decisions with JavaScript and how it can
 
 
 <h3>if/else умови (якщо/інакше)</h3>
+
+<hr />
 
 <p>
   Основне завдання програмування, це написання інструкцій для комп'ютерів, тобто переклад наших ідей з людської мови на комп'ютерну.
@@ -62,6 +65,7 @@ if/else statements are how programs can process yes/no questions programmaticall
 
 <h3>Значення True і False</h3>
 
+<hr />
 <p>
 У попередній вправі, ми написали умову if/else. Залежно від умови виконувався той чи інший блок коду. Хоча в умові типи даних не є булевими. Давайте розглянемо значення true і false у інших типів даних, серед яких стрічки і числа. 
 In the previous exercise, we wrote if/else statements. If a given condition were true, one block of code would run. If that condition were false, a different block of code would run. However, there are data types that are not booleans. Let's explore the concepts of true and false in variables that contain other data types, including strings and numbers.</p>
@@ -104,6 +108,7 @@ All variables that have been created and set are truthy (and will evaluate to tr
 There is an important distinction between a variable's value and its truthiness: variableOne's value is 'I exist' because that is the data saved to the variable. variableOne is truthy because it exists and does not contain any of the seven falsy values listed above.</p>
 
 <h3>Значення True і False II</h3>
+<hr />
 
 <p>
 В програмуванні, ми часто визначаємо чи вираження містить true або false. Для зручності, JavaScript забезпечує скорочений запис для цього.
@@ -135,6 +140,7 @@ if (!isPhoneCharged) {
 In the example above, the program checks if isPhoneCharged evaluates to false. Because isPhoneCharged is true, the second block of code will execute.</p>
 
 <h3>Порівняльні оператори</h3>
+<hr />
 
 <p>Окрім того, що ми перевіряємо чи змінна містить значення true або false, деколи нам потрібно порівняти одні значення з іншими. Для того використовують порівняльні оператори.
 In addition to checking whether a variable evaluates to true or false, sometimes we need to compare variables to other values. We can achieve this with comparison operators.</p>
@@ -152,6 +158,7 @@ In addition to checking whether a variable evaluates to true or false, sometimes
 <p>Ці порівняльні оператори теж перевіряють умову на значення true або false.</p>
 
 <h3>Порівняльні оператори II</h3>
+<hr />
 
 <p>Ми можемо зробити ще два корисних порівняння. Часто, може пригодитися перевірка чи два значення однакові чи ні.
 There are two more useful comparisons we can make. Often, we might want to check if two things are equal to each other or if they are not.</p>
@@ -163,12 +170,14 @@ There are two more useful comparisons we can make. Often, we might want to check
 <p>Отже, ми використовуємо один знак = дорівнює для того щоб призначити змінній значення, а три === для того щоб перевірити, чи є вони однаковими.
 It can be confusing when to use one = sign and when to use three === signs. Use a single = to assign a value to a variable. Use ===to compare the values of two different variables.</p>
 
-<h3>else if Statements</h3>
+<h3>Умова else if</h3>
+<hr />
 
-<p>We've explored if/else statements that answer questions that are either yes or no. What can we do if we have a question that has multiple yes conditions, or multiple no conditions?</p>
+<p>Ми вже знаємо, що блоки if/else перевіряють чи умова правильна чи ні. А що ж робити, якщо у нас є кілька правильних/неправильних відповідей ?</p>
 
-<p>
-We can add more conditions to our if/else statement with else if. Check out how this fits into our current knowledge of if/else statements:</p>
+<p>Ми можемо додати більше умов до нашої структури if/else за допомогою else if.
+We can add more conditions to our if/else statement with else if. Гляньте, як це вписується в наші знання про структуру else/if.
+Check out how this fits into our current knowledge of if/else statements:</p>
 
 <pre><code>let stopLight = 'green';
 
@@ -182,13 +191,15 @@ if (stopLight === 'red') {
   console.log('Caution, unknown!');
 }</code></pre>
 
-<p>1. We created a variable named stopLight that is assigned to the string green.
+<p>1. We created a variable named stopLight that is assigned to the string green. </p>
 
-2. Then, there's an if/else statement with multiple conditions, using else if. else if allows us to check multiple values of the stopLight variable and output different things based on its color.
+<p>2. Then, there's an if/else statement with multiple conditions, using else if. else if allows us to check multiple values of the stopLight variable and output different things based on its color.</p>
 
-3. The block ends with the singular else we have seen before. The else is a catch-all for any other situation. For instance, if the stopLight was blinking blue, the last else would catch it and return a default message.</p>
+
+<p>3. The block ends with the singular else we have seen before. The else is a catch-all for any other situation. For instance, if the stopLight was blinking blue, the last else would catch it and return a default message.</p>
 
 <h3>Logical Operators</h3>
+<hr />
 
 <p>We can translate certain thoughts into JavaScript code such as, "Are these things equal?" with ===, or, "Is one thing greater than another thing?" with >.</p>
 
@@ -214,6 +225,7 @@ These logical operators are helpful when writing if/else statements since they l
 </p>
 
 <h3>switch Statements</h3>
+<hr />
 
 <p>Before we move on, let's circle back to else if statements.</p>
 
@@ -251,6 +263,7 @@ switch (groceryItem) {
     At the end of each switch statement, there is a default condition. If none of the cases are true, then this code will run.
 </p>
 <h3>Ternary Operator</h3>
+<hr />
 
 <p>In the previous exercise, we learned shorthand for writing multiple if/else if/else statements to make them easier to read. JavaScript also provides a way to shorten simple if/else statements called the ternary operator.</p>
 
@@ -279,7 +292,9 @@ The code in the example above will operate exactly as the code from the previous
 
 <p>In the example above, the conditional statement is checking whether the value of the variable age is greater than or equal to 16. If so, a message that states the user is old enough to drive will be logged to the console. Otherwise, a message that states the user is not old enough to drive will be logged.
 </p>
+
 <h3>Review: Control Flow</h3>
+<hr />
 
 <p>Way to go! We just learned a lot of control flow concepts:
 

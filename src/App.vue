@@ -4,7 +4,7 @@
 <div class="container">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-        <a class="navbar-brand" href="/">PC Genius</a>
+        <a class="navbar-brand" href="/"><img src="./assets/pc-genius-1.png" alt="PC Genius" width="150" height="40"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,7 +49,7 @@
 
           <li>
           <ul class="contact-info">
-            <li><span>Створено за допомогою:</span></li>
+            <li><span>Створено:</span></li>
             <li><img class="logo" src="./assets/logo.png" alt="VueJS Logo" title="VueJS"></li>
             <li><img class="logo" src="./assets/bootstrap-logo.png" alt="Bootstrap Logo" title="Bootstrap"></li>
           </ul>
@@ -139,7 +139,7 @@ ul {
 
 footer li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 5px;
 }
 
 

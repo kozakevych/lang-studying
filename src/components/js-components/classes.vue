@@ -4,6 +4,8 @@
 
 		<h3>Introduction to Classes</h3>
 
+    <hr />
+
 <p>JavaScript is an object-oriented programming (OOP) language we can use to model real-world items. In this lesson, you will learn how to make classes. Classes are a tool that developers use to quickly produce similar objects.</p>
 
 <p>Take, for example, an object representing a dog named halley. This dog's name (a key) is "Halley" (a value) and has an age (another key) of 3 (another value). We create the halley object below:</p>
@@ -32,6 +34,7 @@
 <p>After we lay the foundation for classes in the first few exercises, we will introduce inheritance and static methods — two features that will make your code more efficient and meaningful.</p>
 
 <h3>Constructor</h3>
+    <hr />
 
 <p>In the last exercise, you created a class called Dog, and used it to produce a Dog object.</p>
 
@@ -53,6 +56,7 @@
 <p>In the next exercise, you will learn how to create Dog instances.</p>
 
 <h3>Instance</h3>
+    <hr />
 
 <p>Now, we're ready to create class instances. An instance is an object that contains the property names and methods of a class, but with unique property values. Let's look at our Dog class example.</p>
 
@@ -77,6 +81,7 @@ console.log(halley.name); // Log the name value saved to halley
 <p>Now you know how to create instances. In the next exercise, you will learn how to add getters, setters, and methods.</p>
 
 <h3>Methods</h3>
+    <hr />
 
 <p>At this point, we have a Dog class that spins up objects with name and behavior properties. Below, we will add getters and a method to bring our class to life.</p>
 
@@ -104,6 +109,7 @@ console.log(halley.name); // Log the name value saved to halley
 <p>In the example above, we add getter methods for name and behavior. Notice, we also prepended our property names with underscores (_name and _behavior), which indicate these properties should not be accessed directly. Under the getters, we add a method named .incrementBehavior(). When you call .incrementBehavior() on a Dog instance, it adds 1 to the _behavior property. Between each of our methods, we did not include commas.</p>
 
 <h3>Method Calls</h3>
+    <hr />
 
 <p>Finally, let's use our new methods to access and manipulate data from Dog instances.</p>
 
@@ -143,6 +149,7 @@ console.log(bradford.behavior); // Logs 0 to the console</code></pre>
 <p>In the example above, we create two new Dog instances, nikko and bradford. Because we increment the behavior of our nikko instance, but not bradford, accessing nikko.behavior returns 1 and accessing bradford.behavior returns 0.</p>
 
 <h3>Inheritance I</h3>
+    <hr />
 
 <p>Imagine our doggy daycare is so successful that we decide to expand the business and open a kitty daycare. Before the daycare opens, we need to create a Cat class so we can quickly generate Cat instances. We know that the properties in our Cat class (name, behavior) are similar to the properties in our Dog class, though, there will be some differences, because of course, cats are not dogs.</p>
 
@@ -204,6 +211,7 @@ console.log(bradford.behavior); // Logs 0 to the console</code></pre>
 <p>The diagram to the right shows the relationships we want to create between the Animal, Cat, and Dog classes.</p>
 
 <h3>Inheritance II</h3>
+    <hr />
 
 <p>In the last exercise, we created a parent class named Animal for two child classes named Cat and Dog.</p>
 
@@ -257,6 +265,7 @@ console.log(bradford.behavior); // Logs 0 to the console</code></pre>
 <p>To the right, in main.js, you will put what you learned to practice by creating a parent class named HospitalEmployee.</p>
 
 <h3>Inheritance III</h3>
+    <hr />
 
 <p>We've abstracted the shared properties and methods of our Cat and Dog classes into a parent class called Animal (See below).</p>
 
@@ -307,6 +316,7 @@ console.log(bryceCat._name); // output: Bryce</code></pre>
 <p>In the example above, we abandoned best practices by calling our _name property directly. In the next exercise, we'll address this by calling an inherited getter method for our name property.</p>
 
 <h3>Inheritance IV</h3>
+    <hr />
 
 <p>Now that we know how to create an object that inherits properties from a parent class let's turn our attention to methods.</p>
 
@@ -365,6 +375,7 @@ console.log(bryceCat.behavior); // Log value saved to behavior</code></pre>
 
 
 <h3>Inheritance V</h3>
+    <hr />
 
 <p>In addition to the inherited features, child classes can contain their own properties, getters, setters, and methods.</p>
 
@@ -426,6 +437,7 @@ console.log(bryceCat.behavior); // Log value saved to behavior</code></pre>
 <p>Now that we've abstracted animal daycare features, it's easy to see how you can extend Animal to support other classes, like Rabbit, Bird or even Snake.</p>
 
 <h3>Static Methods</h3>
+    <hr />
 
 <p>Sometimes you will want a class to have methods that aren't available in individual instances, but that you can call directly from the class.</p>
 
@@ -460,6 +472,7 @@ tyson.generateName(); // TypeError</code></pre>
 <p>The example above will result in an error, because you cannot call static methods (.generateName()) on an instance (tyson).</p>
 
 <h3>Review: Classes</h3>
+    <hr />
 
 <p>Way to go! Let's review what you learned.</p>
 

@@ -2,97 +2,99 @@
 	
   <div class="blog-post text-left">
 	
-		Introduction to JavaScript Objects
+		<h2>Introduction to JavaScript Objects</h2>
 
-By the end of this lesson, you'll have the knowledge and skills to produce your own JavaScript objects.
+<p>By the end of this lesson, you'll have the knowledge and skills to produce your own JavaScript objects.</p>
 
-Throughout this lesson, you will learn how to:
+<p>Throughout this lesson, you will learn how to:</p>
 
-    Represent real-world objects in JavaScript
+    <p>Represent real-world objects in JavaScript
     Access object properties
     Access object methods
-    Create object getter and setter methods
+    Create object getter and setter methods</p>
 
-These concepts will enable you to bundle related data and methods into one package that models the real world.
+<p>These concepts will enable you to bundle related data and methods into one package that models the real world.</p>
 
-Let's get started!
+<p>Let's get started!</p>
 
 
-Objects
+<h3>Objects</h3>
 
-JavaScript objects are containers that can store data and functions. The data we store in an object is not ordered — we can only access it by calling its associated key.
+<hr />
 
-You can create an object with key-value pairs using the following syntax:
+<p>JavaScript objects are containers that can store data and functions. The data we store in an object is not ordered — we can only access it by calling its associated key.</p>
 
-let restaurant = {
+<p>You can create an object with key-value pairs using the following syntax:</p>
+
+<pre><code>let restaurant = {
   name: 'Italian Bistro',
   seatingCapacity: 120,
   hasDineInSpecial: true,
   entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine Pesto']
-};
+};</code></pre>
 
-Let's consider the above example one step at a time:
+<p>Let's consider the above example one step at a time:</p>
 
-    let restaurant creates a variable named restaurant that stores the object.
+    <p>let restaurant creates a variable named restaurant that stores the object.
     We create the object between curly braces: {}.
     name, seatingCapacity, hasDineInSpecial, and entrees are all keys.
     We separate each key from its corresponding value by a colon (:).
     The value is to the right of the colon. For example, seatingCapacity's value is 120.
-    Every key-value pair is separated by a comma ,.
+    Every key-value pair is separated by a comma ,.</p>
 
-An objects keys point to values that can be any data type, including other objects.
+<p>An objects keys point to values that can be any data type, including other objects.</p>
 
-Accessing Object Properties I
+<h3>Accessing Object Properties I</h3>
 
-Now that we have data in an object, we need a way to access the values. The most common way to access a key's value is to use dot notation.
+<p>Now that we have data in an object, we need a way to access the values. The most common way to access a key's value is to use dot notation.</p>
 
-Look at how entrees is accessed from the restaurant object in last line of the example below:
+<p>Look at how entrees is accessed from the restaurant object in last line of the example below:</p>
 
-let restaurant = {
+<pre><code>let restaurant = {
   name: 'Italian Bistro',
   seatingCapacity: 120,
   hasDineInSpecial: true,
   entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
 };
 
-console.log(restaurant.entrees);
+console.log(restaurant.entrees);</code></pre>
 
-The output would be:
+<p>The output would be:</p>
 
-['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
+<pre><code>['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']</code></pre>
 
-To access the properties within an object, we connect the value's name to the key name with a period .. By using console.log() to print restaurant.entrees, we can see the value of the key entrees.
+<p>To access the properties within an object, we connect the value's name to the key name with a period .. By using console.log() to print restaurant.entrees, we can see the value of the key entrees.</p>
 
-Accessing Object Properties II
+<h3>Accessing Object Properties II</h3>
 
-Another way to access a key's value is with bracket notation.
+<p>Another way to access a key's value is with bracket notation.</p>
 
-Just like with dot notation, we can use opening ([) and closing (]) brackets to access a key. The syntax looks like this:
+<p>Just like with dot notation, we can use opening ([) and closing (]) brackets to access a key. The syntax looks like this:</p>
 
-let restaurant = {
+<pre><code>let restaurant = {
   name: 'Italian Bistro',
   seatingCapacity: 120,
   hasDineInSpecial: true,
   entrees: ['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
 };
 
-console.log(restaurant['entrees']);
+console.log(restaurant['entrees']);</code></pre>
 
-The output would, again, be:
+<p>The output would, again, be:</p>
 
-['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']
+<pre><code>['Penne alla Bolognese', 'Chicken Cacciatore', 'Linguine pesto']</code></pre>
 
-On the last line of the program, we used restaurant['entrees']. This syntax uses bracket notation to select the value at the entrees key from within the restaurant object.
+<p>On the last line of the program, we used restaurant['entrees']. This syntax uses bracket notation to select the value at the entrees key from within the restaurant object.</p>
 
-Notice that bracket notation outputs the same value as dot notation. You may see either of these techniques used in JavaScript programs, so it's good to be familiar with both.
+<p>Notice that bracket notation outputs the same value as dot notation. You may see either of these techniques used in JavaScript programs, so it's good to be familiar with both.</p>
 
-Accessing Object Properties III
+<h3>Accessing Object Properties III</h3>
 
-One advantage that bracket notation has over dot notation is that you can use variables inside the brackets to select the keys of an object.
+<p>One advantage that bracket notation has over dot notation is that you can use variables inside the brackets to select the keys of an object.</p>
 
-For example, a restaurant may have different specials based on the time of day. We could put each special in the restaurantSpecials object, then select the one we need later in our program based on the current time.
+<p>For example, a restaurant may have different specials based on the time of day. We could put each special in the restaurantSpecials object, then select the one we need later in our program based on the current time.</p>
 
-let meal = 'none';
+<pre><code>let meal = 'none';
 let time = 12;
 // We'll use military time for this example, counting hours 0-23.
 
@@ -108,15 +110,15 @@ if (time < 11) { // 11 am
   meal = 'lunch';
 }
 
-console.log(restaurantSpecials[meal]);
+console.log(restaurantSpecials[meal]);</code></pre>
 
-The output would be:
+<p>The output would be:</p>
 
-The lunch special is 10% off appetizers
+<p>The lunch special is 10% off appetizers</p>
 
-    The restaurantSpecials object has three key-value pairs for different specials throughout the day: breakfast, lunch, and none.
+    <p>The restaurantSpecials object has three key-value pairs for different specials throughout the day: breakfast, lunch, and none.
     The if/else statement sets the meal variable to 'breakfast' or 'lunch' based on the the time. For purposes of this example, we can imagine the time variable getting updated every hour.
-    On the last line, we wrote restaurantSpecials[meal]. The meal variable is not a key in the restaurantSpecials object. Because we are using bracket notation, JavaScript looks at the meal variable's value. In this case, meal is set to 'lunch' within the if/else statement because time is equal to 12. Since special equals 'lunch', writing restaurantSpecials[meal] is the same as writing restaurantSpecials['lunch'] — the code outputs the lunch special.
+    On the last line, we wrote restaurantSpecials[meal]. The meal variable is not a key in the restaurantSpecials object. Because we are using bracket notation, JavaScript looks at the meal variable's value. In this case, meal is set to 'lunch' within the if/else statement because time is equal to 12. Since special equals 'lunch', writing restaurantSpecials[meal] is the same as writing restaurantSpecials['lunch'] — the code outputs the lunch special.</p>
 
 Bracket notation is required to use variables to look up keys within an object. It's not possible to use variables like this with dot notation.
 

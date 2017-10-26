@@ -1,9 +1,11 @@
 <template>
 
   <div class="blog-post text-left">
-    <h3>Introduction to Functions</h3>
+    <h3>Функції</h3>
+    <hr />
 
-    <p>A function is a block of code designed to perform a task.</p>
+    <p>Функція - це блок коду створений для того, щоб виконувати певне завдання.
+    A function is a block of code designed to perform a task.</p>
 
     <p>
       Functions are like recipes. They accept data, perform actions on that data, and return a result. The beauty of functions is that they allow us to write a block of code once, then we can reuse it over and over without rewriting the same code.
@@ -62,6 +64,7 @@ pressPowerButton();
     </p>
 
     <h3>Parameters</h3>
+    <hr />
 
     <p>
       So far our function has not required any input. We can also write functions that accept data. We do this with parameters. Parameters are variables in a function definition that represent data we can input into the function.
@@ -88,6 +91,7 @@ multiplyByThirteen(9);
     </p>
 
     <h3>Parameters II</h3>
+    <hr />
 
     <p>If we can set one parameter, can we set two?</p>
 
@@ -124,6 +128,7 @@ getAverage(365, 27);
     </p>
 
     <h3>Return</h3>
+    <hr />
 
     <p>
       Using console.log() as the result of a function isn't the best use of a function. The purpose of a function is to take some input, perform some task on that input, then return a result.
@@ -154,6 +159,7 @@ console.log(getAverage(365, 27));
     </p>
     
     <h3>Return II</h3>
+    <hr />
 
 <p>In the last exercise, we pointed out that using return makes programs more maintainable and flexible, but how exactly?</p>
 
@@ -177,6 +183,7 @@ console.log('The temperature is ' + getFahrenheit(15) + '°F');
 <p>We can use functions to section off small bits of logic or tasks, then use them when we need to. Writing functions can help take large and difficult problems and break them into small and manageable problems.</p>
 
 <h3>Function Declarations</h3>
+    <hr />
 
 <p>Now that we have an understanding of functions in JavaScript, let's take a broader look at the type of functions we'll see. Functions in JavaScript are generally declared as either a function declaration or a function expression.</p>
 
@@ -194,6 +201,7 @@ console.log(square(5));
 <p>Let's create a basic function declaration.</p>
 
 <h3>Function Expressions</h3>
+    <hr />
 
 <p>A function expression is similar to function declaration, with the exception that identifier can be omitted, creating an anonymous function. Function expressions are often stored in a variable. You can identify a function expression by the absence of a function name immediately trailing the function keyword.</p>
 
@@ -218,6 +226,7 @@ console.log(square(5));
 <p>It's important to be familiar with the multiple ways of writing functions, since you will come across these in JavaScript code.</p>
 
 <h3>Arrow Functions</h3>
+    <hr />
 
 <p>JavaScript also provides several ways to refactor arrow function syntax. We'll explore a few of these techniques here, using an example function from a previous exercise.</p>
 
@@ -252,6 +261,7 @@ console.log('The temperature is ' + getFahrenheit(15) + '°F');</code></pre>
     The {} have been removed, again, since the function consists of a single-line block.</p>
 
 <h3>Review Functions</h3>
+    <hr />
 
 <p>This unit introduced you to functions.</p>
 
