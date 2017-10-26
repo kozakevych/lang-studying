@@ -25,7 +25,7 @@ In this lesson, we'll learn how to make decisions with JavaScript and how it can
 
 
 
-<h3>if/else умови (якщо/інакше)</h3>
+<h3>Структура if/else (якщо/інакше)</h3>
 
 <hr />
 
@@ -236,15 +236,15 @@ These logical operators are helpful when writing if/else statements since they l
 
 <p>Before we move on, let's circle back to else if statements.</p>
 
-<p>Using else if is a great tool for when we have a few different conditions we'd like to consider.
+<p>Using else if is a great tool for when we have a few different conditions we'd like to consider.</p>
 
-else if is limited, however. If we want to write a program with 25 different conditions, like a JavaScript cash register, we'd have to write a lot of code, and it can be difficult to read and understand.
+<p>else if is limited, however. If we want to write a program with 25 different conditions, like a JavaScript cash register, we'd have to write a lot of code, and it can be difficult to read and understand.</p>
 
-To deal with times when you need many else if conditions, we can turn to a switch statement to write more concise and readable code.
+<p>To deal with times when you need many else if conditions, we can turn to a switch statement to write more concise and readable code.</p>
 
-To a computer, a switch statement and an if/else statement are the same, but a switch statement can be easier for other humans to read. Part of being a good developer is writing code that both computers and other humans can read.
+<p>To a computer, a switch statement and an if/else statement are the same, but a switch statement can be easier for other humans to read. Part of being a good developer is writing code that both computers and other humans can read.</p>
 
-switch statements look like this:</p>
+<p>switch statements look like this:</p>
 
 <pre><code>let groceryItem = 'papaya';
 
@@ -263,12 +263,15 @@ switch (groceryItem) {
     break;
 }</code></pre>
 
-    <p>The switch keyword initiates the statement and is followed by ( ... ), which contains the condition that each case will compare to. In the example, the condition is groceryItem.
-    Inside the block, { ... }, there are cases. case is like the else if part of an if/else if/else statement. The word following the first case is 'tomato'. If groceryItem equalled 'tomato', that case's console.log() would run.
-    groceryItem equals 'papaya', so the first and second case statements are skipped. The third case runs since the case is 'papaya', which matches groceryItem's value. This particular program will log Papayas are $1.29.
-    Then the program stops with the break keyword. This keyword will prevent the switch statement from executing any more of its code. Without adding break at the end of each case, the program will execute the code for all matching cases and the default code as well. This behavior is different from if/else conditional statements which execute only one block of code.
-    At the end of each switch statement, there is a default condition. If none of the cases are true, then this code will run.
-</p>
+    <p>The switch keyword initiates the statement and is followed by ( ... ), which contains the condition that each case will compare to. In the example, the condition is groceryItem.</p>
+
+    <p>Inside the block, { ... }, there are cases. case is like the else if part of an if/else if/else statement. The word following the first case is 'tomato'. If groceryItem equalled 'tomato', that case's console.log() would run.</p>
+    <p>
+    groceryItem equals 'papaya', so the first and second case statements are skipped. The third case runs since the case is 'papaya', which matches groceryItem's value. This particular program will log Papayas are $1.29.</p>
+    <p>
+    Then the program stops with the break keyword. This keyword will prevent the switch statement from executing any more of its code. Without adding break at the end of each case, the program will execute the code for all matching cases and the default code as well. This behavior is different from if/else conditional statements which execute only one block of code.</p>
+    <p>
+      At the end of each switch statement, there is a default condition. If none of the cases are true, then this code will run.</p>
 <h3>Ternary Operator</h3>
 <hr />
 
@@ -303,20 +306,22 @@ The code in the example above will operate exactly as the code from the previous
 <h3>Review: Control Flow</h3>
 <hr />
 
-<p>Way to go! We just learned a lot of control flow concepts:
+<p>Way to go! We just learned a lot of control flow concepts:</p>
 
-    if/else statements make binary decisions and execute different code based on conditions.
-    All conditions are evaluated to be truthy or falsy.
-    We can add more conditional statements to if/else statements with else if.
-    switch statements make complicated if/else statements easier to read and achieve the same result.
-    The ternary operator (?) and a colon (:) allow us to refactor simple if/else statements.
+    <p>if/else statements make binary decisions and execute different code based on conditions.
+    All conditions are evaluated to be truthy or falsy.</p>
+    
+    <p>We can add more conditional statements to if/else statements with else if.
+    switch statements make complicated if/else statements easier to read and achieve the same result.</p>
+    <p>The ternary operator (?) and a colon (:) allow us to refactor simple if/else statements.
     Comparison operators, including <, >, <=, and >= can compare two variables or values.
-    After two values are compared, the conditional statement evaluates to true or false.
-    The logical operator && checks if both sides of a condition are truthy.
+    After two values are compared, the conditional statement evaluates to true or false.</p>
+    
+    <p>The logical operator && checks if both sides of a condition are truthy.
     The logical operator || checks if either side is truthy.
     The logical operator !== checks if the two sides are not equal.
-    An exclamation mark (!) switches the truthiness / falsiness of the value of a variable.
-    One equals symbol (=) is used to assign a value to a variable.
+    An exclamation mark (!) switches the truthiness / falsiness of the value of a variable.</p>
+    <p>One equals symbol (=) is used to assign a value to a variable.
     Three equals symbols (===) are used to check if two variables are equal to each other.
 </p>
  <nav class="page-navigation" aria-label="Page navigation">

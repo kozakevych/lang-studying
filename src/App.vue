@@ -38,8 +38,6 @@
 
  
     <router-view/>
-
-
     
     <hr />
 
@@ -139,8 +137,7 @@ ul {
 
 footer li {
   display: inline-block;
-  margin: 5px;
+  margin: 4px;
 }
-
 
 </style>
