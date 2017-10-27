@@ -7,48 +7,48 @@
         <router-link to="/js-course/introduction-js" class="breadcrumb-item active" aria-current="page">Функції</router-link>
       </ol>
     </nav>
-  	Hello Modules
+  	<h3>Hello Modules</h3>
 
-JavaScript modules are reusable pieces of code that can be exported from one program and imported for use in another program.
+<p>JavaScript modules are reusable pieces of code that can be exported from one program and imported for use in another program.</p>
 
-Modules are particularly useful for a number of reasons. By separating code with similar logic into files called modules, we can:
+<p>Modules are particularly useful for a number of reasons. By separating code with similar logic into files called modules, we can:</p>
 
-    find, fix, and debug code more easily;
+    <p>find, fix, and debug code more easily;
     reuse and recycle defined logic in different parts of our application;
     keep information private and protected from other modules;
-    and, importantly, prevent pollution of the global namespace and potential naming collisions, by cautiously selecting variables and behavior we load into a program.
+    and, importantly, prevent pollution of the global namespace and potential naming collisions, by cautiously selecting variables and behavior we load into a program.</p>
 
-module.exports
+<h3>module.exports</h3>
 
-We can get started with modules by defining a module in one file, and making the module available for use in another file. Below is an example of how to define a module, and how to export it using the statement module.exports.
+<p>We can get started with modules by defining a module in one file, and making the module available for use in another file. Below is an example of how to define a module, and how to export it using the statement module.exports.</p>
 
-In menu.js we write:
+<p>In menu.js we write:</p>
 
-let Menu = {};
+<pre><code>let Menu = {};
 Menu.specialty = "Roasted Beet Burger with Mint Sauce";
 
-module.exports = Menu;
+module.exports = Menu;</code></pre>
 
-Let's consider what this code means.
+<p>Let's consider what this code means.</p>
 
-    let Menu = {}; creates the object that represents the module Menu. The statement contains an uppercase variable named Menu which is set equal to an object.
+    <p>let Menu = {}; creates the object that represents the module Menu. The statement contains an uppercase variable named Menu which is set equal to an object.
     Menu.specialty is defined as a property of the Menu module. We add data to the Menu object by setting properties on that object, and giving the properties a value.
     "Roasted Beet Burger with Mint Sauce"; is the value stored in the Menu.specialty property.
-    module.exports = Menu; exports the Menu object as a module. module is a variable that represents the module, and exports exposes the module as an object.
+    module.exports = Menu; exports the Menu object as a module. module is a variable that represents the module, and exports exposes the module as an object.</p>
 
-The pattern we use to export modules is thus:
+<p>The pattern we use to export modules is thus:</p>
 
-    Define an object to represent the module.
+    <p>Define an object to represent the module.
     Add data or behavior to the module.
-    Export the module.
+    Export the module.</p>
 
-Let's create our first module.
+<p>Let's create our first module.</p>
 
-require()
+<h3>require()</h3>
 
-To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.
+<p>To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.</p>
 
-For instance, say we want the module to control the menu's data and behavior, and we want a separate file to handle placing an order. We would create a separate file order.js and import the Menu module from menu.js to order.js using require():
+<p>For instance, say we want the module to control the menu's data and behavior, and we want a separate file to handle placing an order. We would create a separate file order.js and import the Menu module from menu.js to order.js using require():</p>
 
 In order.js we would write:
 
