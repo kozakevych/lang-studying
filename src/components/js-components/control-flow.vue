@@ -198,7 +198,8 @@ if (stopLight === 'red') {
   console.log('Caution, unknown!');
 }</code></pre>
 
-<p>1. We created a variable named stopLight that is assigned to the string green. </p>
+<p>1. Ми створили змінну stopLight, і призначили їй значення green.  
+We created a variable named stopLight that is assigned to the string green. </p>
 
 <p>2. Then, there's an if/else statement with multiple conditions, using else if. else if allows us to check multiple values of the stopLight variable and output different things based on its color.</p>
 

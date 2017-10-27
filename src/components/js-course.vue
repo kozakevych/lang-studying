@@ -8,10 +8,8 @@
     
 
   <router-view />
- 
-  <vm-back-top :bottom="50" :duration="1000" :timing="'ease'" v-if="$route.path !== '/js-course/'">
-    <img src="../assets/arrow-up-2.png" height="50" width="50" alt="">
-  </vm-back-top>
+  <back-to-top text="Вгору" id="back-to-top" v-if="$route.path !== '/js-course/'"></back-to-top>
+
 
  	</div>
 </div>
@@ -35,6 +33,22 @@
 
   .course-name {
     font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  .vue-back-to-top {
+    position: fixed;
+    left: 30px;
+    opacity: .8;
+  }
+  
+  #back-to-top {
+    width: 60px;
+  }
+  
+  .vue-back-to-top:hover {
+    position: fixed;
+    left: 30px;
+    opacity: 1;
   }
 </style>
 
