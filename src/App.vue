@@ -84,6 +84,7 @@ html, body {
   height: 100%;
 }
 
+
 body {
   background: url(assets/main-background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -98,6 +99,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.container {
+  background: #f5f5f5;
+  box-shadow: 0px 0px 30px 20px #f5f5f5;
 }
 
 .navbar {

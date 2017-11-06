@@ -2,7 +2,7 @@
 	<div class="js-content">
 		
 <div class="jumbotron-js rounded">
-        <div class="container">
+        <div>
           <h1 class="display-5 course-name">JavaScript</h1>
         </div>
       </div>

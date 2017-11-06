@@ -31,6 +31,9 @@
     width: 100%
   }
 
+  .blog-post {
+  }
+
   .course-name {
     font-family: "Comic Sans MS", cursive, sans-serif;
   }
