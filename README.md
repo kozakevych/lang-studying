@@ -1,8 +1,13 @@
 # lang-studying
 
-> Studying platform
+Studying platform named "PC Genius", was made by using Vue.js, Bootstrap and Node.js.
+Project to study JS and other programming languages in Ukrainian.
 
-## Build Setup
+## Demo
+
+Check it on Heroku: [PC Genius studying platform](https://lang-studying.herokuapp.com/)
+
+## To Make Local Build
 
 ``` bash
 # install dependencies
