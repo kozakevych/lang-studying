@@ -26,12 +26,9 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/sign-in">Увійти</a>
+              <a class="nav-link" href="#">Увійти</a>
             </li>
 
-            <li class="nav-item active">
-              <a class="nav-link" href="#">English</a>
-            </li>
           </ul>
         </div>
       </nav>

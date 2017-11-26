@@ -3,7 +3,7 @@ import Router from 'vue-router'
 // import BootstrapVue from 'bootstrap-vue'
 // import VueBreadcrumbs from 'vue-breadcrumbs'
 import MainPage from '@/components/main-page'
-import SignIn from '@/components/sign-in'
+// import SignIn from '@/components/sign-in'
 import JsCourse from '@/components/js-course'
 import JsContent from '@/components/js-components/js-content'
 import IntroJS from '@/components/js-components/introduction'
@@ -34,11 +34,11 @@ export default new Router({
       name: 'Main',
       component: MainPage
     },
-    {
-      path: '/sign-in',
-      name: 'SignIn',
-      component: SignIn
-    },
+    // {
+    //   path: '/sign-in',
+    //   name: 'SignIn',
+    //   component: SignIn
+    // },
     {
       path: '/js-course',
       name: 'JsCourse',
