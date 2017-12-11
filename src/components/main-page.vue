@@ -1,14 +1,24 @@
 <template>
 
   <div class="main">
+    <h4 v-if="authenticated">
+        You are logged in!
+    </h4>
+    <h4 v-if="!authenticated">
+      You are not logged in! Please <a @click="auth.login()">Log In</a> to continue.
+    </h4>
 
-
-           <div class="jumbotron">
+      <div class="jumbotron" v-if="!authenticated">
         <h3 class="display-5">Вивчайте програмування вже сьогодні</h3>
         <p class="lead">Цікавитеся програмуванням ?</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Увійти</a></p>
+        <p><a class="btn btn-lg btn-success" @click="auth.login()" role="button">Увійти</a></p>
       </div>
 
+      <div class="jumbotron" v-if="authenticated">
+        <h3 class="display-5">Привіт, Шихафпрфвауз</h3>
+        <p class="lead">Доброго вечора</p>
+        <p><a class="btn btn-lg btn-success" role="button">Увійти</a></p>
+      </div>
 
 
      <div class="row">
@@ -16,7 +26,7 @@
           <img class="rounded-circle" src="../assets/js-logo.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>JavaScript</h2>
           <p>Широко розповсюджена мова веб програмування, яка забезпечує динамічну поведінку елементів на більшості веб-сайтів.</p>
-          <p><a class="btn btn-secondary" href="/#/js-course/" role="button">Перейти до курсу &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="/js-course/" role="button">Перейти до курсу &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="rounded-circle" src="../assets/python-logo.jpg" alt="Generic placeholder image" width="140" height="140">
@@ -39,6 +49,7 @@
 <script>
 export default {
   name: 'main-page',
+  props: ['auth', 'authenticated'],
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'

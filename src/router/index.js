@@ -3,6 +3,7 @@ import Router from 'vue-router'
 // import BootstrapVue from 'bootstrap-vue'
 // import VueBreadcrumbs from 'vue-breadcrumbs'
 import MainPage from '@/components/main-page'
+import Callback from '@/components/callback'
 // import SignIn from '@/components/sign-in'
 import JsCourse from '@/components/js-course'
 import JsContent from '@/components/js-components/js-content'
@@ -24,7 +25,7 @@ Vue.use(Router)
 // Vue.use(VueBreadcrumbs)
 
 export default new Router({
-  // mode: 'history',
+  mode: 'history',
   scrollBehavior (to, from, savedPosition) {
     return { x: 0, y: 0 }
   },
@@ -33,6 +34,15 @@ export default new Router({
       path: '/',
       name: 'Main',
       component: MainPage
+    },
+    {
+      path: '/callback',
+      name: 'Callback',
+      component: Callback
+    },
+    {
+      path: '*',
+      redirect: '/'
     },
     // {
     //   path: '/sign-in',

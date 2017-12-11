@@ -2,9 +2,14 @@
   <div id="app">
 
 <div class="container">
+ 
+
+      
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
-        <a class="navbar-brand" href="/#/"><img src="./assets/pc-genius-1.png" alt="PC Genius" width="150" height="40"></a>
+
+        <router-link :to="'/'" class="navbar-brand" href="/"><img src="./assets/pc-genius-1.png" alt="PC Genius" width="150" height="40"></router-link>
+        <!-- <a class="navbar-brand" href="/"><img src="./assets/pc-genius-1.png" alt="PC Genius" width="150" height="40"></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -12,13 +17,16 @@
         <div class="collapse navbar-collapse" id="navbarsExample09">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/#/">Головна<span class="sr-only">(current)</span></a>
+                         <router-link :to="'/'"
+            class="btn btn-primary btn-margin">
+              Головна
+          </router-link>
             </li>
 
             <li class="nav-item active dropdown">
               <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Курси</a>
               <div class="dropdown-menu" aria-labelledby="dropdown09">
-                <a class="dropdown-item" href="/#/js-course">JavaScript</a>
+                <a class="dropdown-item" href="/js-course">JavaScript</a>
                 <a class="dropdown-item disabled" href="#">Python (У розробці)</a>
                 <a class="dropdown-item disabled" href="#">TypeScript (У розробці)</a>
               </div>
@@ -26,7 +34,19 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Увійти</a>
+                  <button
+            class="btn btn-primary btn-margin"
+            v-if="!authenticated"
+            @click="login()">
+              Log In
+          </button>
+
+          <button
+            class="btn btn-primary btn-margin"
+            v-if="authenticated"
+            @click="logout()">
+              Log Out
+          </button>
             </li>
 
           </ul>
@@ -34,7 +54,11 @@
       </nav>
 
  
-    <router-view/>
+     
+    <router-view
+      :auth="auth" 
+      :authenticated="authenticated"> 
+    </router-view>
     
     <hr />
 
@@ -70,8 +94,27 @@
 </template>
 
 <script>
+import AuthService from './auth/AuthService'
+
+const auth = new AuthService()
+
+const { login, logout, authenticated, authNotifier } = auth
+
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    authNotifier.on('authChange', authState => {
+      this.authenticated = authState.authenticated
+    })
+    return {
+      auth,
+      authenticated
+    }
+  },
+  methods: {
+    login,
+    logout
+  }
 }
 </script>
 
