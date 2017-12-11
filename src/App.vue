@@ -38,14 +38,14 @@
             class="btn btn-primary btn-margin"
             v-if="!authenticated"
             @click="login()">
-              Log In
+              Увійти
           </button>
 
           <button
             class="btn btn-primary btn-margin"
             v-if="authenticated"
             @click="logout()">
-              Log Out
+              Вийти
           </button>
             </li>
 

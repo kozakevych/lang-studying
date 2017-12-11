@@ -8,16 +8,15 @@
       You are not logged in! Please <a @click="auth.login()">Log In</a> to continue.
     </h4>
 
-      <div class="jumbotron" v-if="!authenticated">
+      <div class="jumbotron jumbotron-guest" v-if="!authenticated">
         <h3 class="display-5">Вивчайте програмування вже сьогодні</h3>
         <p class="lead">Цікавитеся програмуванням ?</p>
         <p><a class="btn btn-lg btn-success" @click="auth.login()" role="button">Увійти</a></p>
       </div>
 
-      <div class="jumbotron" v-if="authenticated">
-        <h3 class="display-5">Привіт, Шихафпрфвауз</h3>
-        <p class="lead">Доброго вечора</p>
-        <p><a class="btn btn-lg btn-success" role="button">Увійти</a></p>
+      <div class="jumbotron jumbotron-user" v-if="authenticated">
+        <h3 class="display-5">Привіт, Користувач</h3>
+        <p class="lead">Що збираєтеся вивчити сьогодні ?</p>
       </div>
 
 
@@ -70,10 +69,15 @@ ul {
 }
 
 
-.jumbotron {
+.jumbotron-guest {
   color: white;
   background: url(../assets/preview-background.jpg);
 }
 
+
+.jumbotron-user {
+  color: white;
+  background: url(../assets/maxrive.jpg);
+}
 
 </style>
