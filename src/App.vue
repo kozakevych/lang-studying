@@ -18,7 +18,7 @@
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
                          <router-link :to="'/'"
-            class="btn btn-primary btn-margin">
+            class="btn btn-primary btn-light">
               Головна
           </router-link>
             </li>
@@ -33,20 +33,27 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                  <button
-            class="btn btn-primary btn-margin"
-            v-if="!authenticated"
-            @click="login()">
-              Увійти
-          </button>
+            <li class="nav-item active"
+                v-if="authenticated" style="color:white">
+                <router-link :to="'/profile'"
+                  class="btn btn-outline-link">
+                    Профіль
+                </router-link>
+            </li>
 
-          <button
-            class="btn btn-primary btn-margin"
-            v-if="authenticated"
-            @click="logout()">
-              Вийти
-          </button>
+            <li class="nav-item active">
+              <button
+                class="btn btn-primary btn-margin"
+                v-if="!authenticated"
+                @click="login()">
+                Увійти
+              </button>
+              <button
+                class="btn btn-primary btn-margin"
+                v-if="authenticated"
+                @click="logout()">
+                Вийти
+              </button>
             </li>
 
           </ul>
@@ -62,7 +69,7 @@
     
     <hr />
 
-    <footer class="footer rounded navbar-fixed-bottom">
+    <footer class="footer rounded navbar-fixed-bottom" v-if="$route.path !== '/callback'">
       <div class="container">
         <ul>
 
@@ -120,7 +127,6 @@ export default {
 
 <style>
 html, body {
-
   height: 100%;
 }
 
@@ -133,12 +139,18 @@ body {
   background-size: cover;
 
 }
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+button {
+  cursor: pointer;
+  margin-left: 10px;
 }
 
 .container {

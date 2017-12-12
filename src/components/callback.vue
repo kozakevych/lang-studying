@@ -22,7 +22,7 @@
     justify-content: center;
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    background-color: black;
     top: 0;
     bottom: 0;
     left: 0;

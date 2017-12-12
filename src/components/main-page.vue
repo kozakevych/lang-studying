@@ -1,12 +1,6 @@
 <template>
 
   <div class="main">
-    <h4 v-if="authenticated">
-        You are logged in!
-    </h4>
-    <h4 v-if="!authenticated">
-      You are not logged in! Please <a @click="auth.login()">Log In</a> to continue.
-    </h4>
 
       <div class="jumbotron jumbotron-guest" v-if="!authenticated">
         <h3 class="display-5">Вивчайте програмування вже сьогодні</h3>

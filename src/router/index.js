@@ -1,10 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import BootstrapVue from 'bootstrap-vue'
-// import VueBreadcrumbs from 'vue-breadcrumbs'
 import MainPage from '@/components/main-page'
 import Callback from '@/components/callback'
-// import SignIn from '@/components/sign-in'
+import Profile from '@/components/profile'
 import JsCourse from '@/components/js-course'
 import JsContent from '@/components/js-components/js-content'
 import IntroJS from '@/components/js-components/introduction'
@@ -19,10 +17,11 @@ import ClassesJS from '@/components/js-components/classes'
 import BrowserCompatibility from '@/components/js-components/browser-compatibility'
 import Modules from '@/components/js-components/modules'
 import RequestsJS from '@/components/js-components/requests'
+import AuthService from './../auth/AuthService'
 
-// Vue.use(BootstrapVue)
 Vue.use(Router)
-// Vue.use(VueBreadcrumbs)
+
+const auth = new AuthService()
 
 export default new Router({
   mode: 'history',
@@ -44,11 +43,18 @@ export default new Router({
       path: '*',
       redirect: '/'
     },
-    // {
-    //   path: '/sign-in',
-    //   name: 'SignIn',
-    //   component: SignIn
-    // },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: Profile,
+      beforeEnter: (to, from, next) => {
+        if (!auth.isAuthenticated()) {
+          next(false)
+        } else {
+          next()
+        }
+      }
+    },
     {
       path: '/js-course',
       name: 'JsCourse',
